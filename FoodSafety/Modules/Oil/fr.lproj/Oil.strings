@@ -1,0 +1,78 @@
+
+/* Class = "UITextField"; placeholder = "Area"; ObjectID = "1f9-I2-1ai"; */
+"1f9-I2-1ai.placeholder" = "Lieu";
+
+/* Class = "UILabel"; text = "MON"; ObjectID = "1lh-X9-Abc"; */
+"1lh-X9-Abc.text" = "Lun";
+
+/* Class = "UILabel"; text = "FRI"; ObjectID = "3Me-IB-UrU"; */
+"3Me-IB-UrU.text" = "Ven";
+
+/* Class = "UIButton"; normalTitle = "ACCEPT"; ObjectID = "7bo-2i-QhL"; */
+"7bo-2i-QhL.normalTitle" = "Accepter";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "F1H-Wf-h7Y"; */
+"F1H-Wf-h7Y.text" = "Description";
+
+/* Class = "UILabel"; text = "SAT"; ObjectID = "Kry-h3-zfG"; */
+"Kry-h3-zfG.text" = "Sam";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "Pnh-dE-Kco"; */
+"Pnh-dE-Kco.placeholder" = "Chercher";
+
+/* Class = "UILabel"; text = "Scan"; ObjectID = "Prg-Of-iCk"; */
+"Prg-Of-iCk.text" = "Scan";
+
+/* Class = "UILabel"; text = "Item*"; ObjectID = "Rhs-cp-09g"; */
+"Rhs-cp-09g.text" = "Elément*";
+
+/* Class = "UILabel"; text = "Afternoon"; ObjectID = "Rqt-Ap-k5m"; */
+"Rqt-Ap-k5m.text" = "Après-midi";
+
+/* Class = "UILabel"; text = "SUN"; ObjectID = "XGO-EV-4ku"; */
+"XGO-EV-4ku.text" = "Dim";
+
+/* Class = "UILabel"; text = "Area*"; ObjectID = "aLb-X4-zpa"; */
+"aLb-X4-zpa.text" = "Lieu*";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "fNy-eH-LYb"; */
+"fNy-eH-LYb.text" = "20 derniers relevés";
+
+/* Class = "UILabel"; text = "Morning"; ObjectID = "fOj-fk-1Pk"; */
+"fOj-fk-1Pk.text" = "Matin";
+
+/* Class = "UILabel"; text = "THU"; ObjectID = "gIj-Qa-Mgc"; */
+"gIj-Qa-Mgc.text" = "Jeu";
+
+/* Class = "UILabel"; text = "Select Item"; ObjectID = "jUi-Sq-Hqg"; */
+"jUi-Sq-Hqg.text" = "Sélectionner un article";
+
+/* Class = "UIButton"; normalTitle = "DECLINE"; ObjectID = "nlH-cN-x96"; */
+"nlH-cN-x96.normalTitle" = "Décliner";
+
+/* Class = "UILabel"; text = "Capture"; ObjectID = "nze-NS-CQa"; */
+"nze-NS-CQa.text" = "Capture";
+
+/* Class = "UILabel"; text = "Oil"; ObjectID = "osa-5O-fyH"; */
+"osa-5O-fyH.text" = "Huile de friture";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "puT-Ke-Ig7"; */
+"puT-Ke-Ig7.text" = "Heure";
+
+/* Class = "UILabel"; text = "WED"; ObjectID = "rzZ-tW-2Wk"; */
+"rzZ-tW-2Wk.text" = "Mer";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "sF9-f5-efi"; */
+"sF9-f5-efi.normalTitle" = "Suivant";
+
+/* Class = "UILabel"; text = "ITEM"; ObjectID = "uj0-l9-r3n"; */
+"uj0-l9-r3n.text" = "Elément";
+
+/* Class = "UILabel"; text = "TUE"; ObjectID = "w8V-4b-N4H"; */
+"w8V-4b-N4H.text" = "Mar";
+
+/* Class = "UILabel"; text = "Evening"; ObjectID = "xBG-DP-wHr"; */
+"xBG-DP-wHr.text" = "Soir";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "yqR-f2-0gs"; */
+"yqR-f2-0gs.normalTitle" = "Suivant";

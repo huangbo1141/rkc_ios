@@ -1,0 +1,179 @@
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "1SF-dR-EF7"; */
+"1SF-dR-EF7.text" = "Emplacement";
+
+/* Class = "UIButton"; normalTitle = "Expire Date"; ObjectID = "8te-x3-xVB"; */
+"8te-x3-xVB.normalTitle" = "DLC/DLUO";
+
+/* Class = "UIButton"; normalTitle = "Name"; ObjectID = "AQP-wE-ba0"; */
+"AQP-wE-ba0.normalTitle" = "Nom";
+
+/* Class = "UIButton"; normalTitle = "Name"; ObjectID = "CJE-fb-to1"; */
+"CJE-fb-to1.normalTitle" = "Nom";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "CTc-24-IUj"; */
+"CTc-24-IUj.text" = "De";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "DDs-KO-USS"; */
+"DDs-KO-USS.normalTitle" = "Enregistrer";
+
+/* Class = "UIButton"; normalTitle = "Location"; ObjectID = "DDw-ZN-1HI"; */
+"DDw-ZN-1HI.normalTitle" = "Emplacement";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "GSX-Lk-jIl"; */
+"GSX-Lk-jIl.normalTitle" = "Ajouter";
+
+/* Class = "UIButton"; normalTitle = "Label"; ObjectID = "HR8-pZ-Sjv"; */
+"HR8-pZ-Sjv.normalTitle" = "Etiquette";
+
+/* Class = "UILabel"; text = "View Detail"; ObjectID = "JWa-KD-sfT"; */
+"JWa-KD-sfT.text" = "Voir les détails";
+
+/* Class = "UIButton"; normalTitle = "Expire Date"; ObjectID = "JZH-YR-5JF"; */
+"JZH-YR-5JF.normalTitle" = "DLC/DLUO";
+
+/* Class = "UIButton"; normalTitle = "ADD"; ObjectID = "KWN-Ik-613"; */
+"KWN-Ik-613.normalTitle" = "Ajouter";
+
+/* Class = "UIButton"; normalTitle = "Action"; ObjectID = "LtB-io-sQ3"; */
+"LtB-io-sQ3.normalTitle" = "Action";
+
+/* Class = "UILabel"; text = "Supplier1"; ObjectID = "NdW-Q6-bfW"; */
+"NdW-Q6-bfW.text" = "Supplier1";
+
+/* Class = "UIButton"; normalTitle = "Title"; ObjectID = "Ph5-At-3z2"; */
+"Ph5-At-3z2.normalTitle" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "Pnr-R9-ZUD"; */
+"Pnr-R9-ZUD.normalTitle" = "Effacer";
+
+/* Class = "UIButton"; normalTitle = "Apply Filter"; ObjectID = "Qu8-t0-uYR"; */
+"Qu8-t0-uYR.normalTitle" = "Appliquer le filtre
+";
+
+/* Class = "UILabel"; text = "Menu"; ObjectID = "RYU-u7-kqh"; */
+"RYU-u7-kqh.text" = "Menu";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "Sav-aM-Bth"; */
+"Sav-aM-Bth.text" = "Date";
+
+/* Class = "UIButton"; normalTitle = "ADD"; ObjectID = "UWN-CT-vJe"; */
+"UWN-CT-vJe.normalTitle" = "Ajouter";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "V20-xF-7H1"; */
+"V20-xF-7H1.text" = "Nom";
+
+/* Class = "UIButton"; normalTitle = "Title"; ObjectID = "VEQ-Np-mON"; */
+"VEQ-Np-mON.normalTitle" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "WgP-JA-Dul"; */
+"WgP-JA-Dul.normalTitle" = "Suivant";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "Wm7-dn-WZw"; */
+"Wm7-dn-WZw.text" = "2017";
+
+/* Class = "UISegmentedControl"; YH6-sH-ILU.segmentTitles[0] = "DETAIL"; ObjectID = "YH6-sH-ILU"; */
+"YH6-sH-ILU.segmentTitles[0]" = "Détail";
+
+/* Class = "UISegmentedControl"; YH6-sH-ILU.segmentTitles[1] = "ITEM"; ObjectID = "YH6-sH-ILU"; */
+"YH6-sH-ILU.segmentTitles[1]" = "Plats ou produits";
+
+/* Class = "UISegmentedControl"; YH6-sH-ILU.segmentTitles[2] = "LABEL"; ObjectID = "YH6-sH-ILU"; */
+"YH6-sH-ILU.segmentTitles[2]" = "Etiquette";
+
+/* Class = "UILabel"; text = "Items"; ObjectID = "ZdZ-4L-UHM"; */
+"ZdZ-4L-UHM.text" = "Etiquette";
+
+/* Class = "UILabel"; text = "Supplier"; ObjectID = "ZmT-Eo-KnS"; */
+"ZmT-Eo-KnS.text" = "Fournisseur";
+
+/* Class = "UIButton"; normalTitle = "Expire Date"; ObjectID = "a9f-Qu-eB4"; */
+"a9f-Qu-eB4.normalTitle" = "DLC/DLUO";
+
+/* Class = "UIButton"; normalTitle = "Name"; ObjectID = "aYX-G6-v5q"; */
+"aYX-G6-v5q.normalTitle" = "Nom";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "b4w-nF-MsR"; */
+"b4w-nF-MsR.text" = "2017";
+
+/* Class = "UILabel"; text = "Title*"; ObjectID = "c7s-kG-0Ku"; */
+"c7s-kG-0Ku.text" = "Titre*";
+
+/* Class = "UIButton"; normalTitle = "Title"; ObjectID = "d2g-Wz-A8I"; */
+"d2g-Wz-A8I.normalTitle" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Date"; ObjectID = "dIM-pU-unr"; */
+"dIM-pU-unr.normalTitle" = "Date";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "e4B-nK-m5J"; */
+"e4B-nK-m5J.text" = "Heure";
+
+/* Class = "UILabel"; text = "Location*"; ObjectID = "eJx-fh-orU"; */
+"eJx-fh-orU.text" = "Emplacement*";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "gAQ-hP-woP"; */
+"gAQ-hP-woP.normalTitle" = "Ajouter";
+
+/* Class = "UILabel"; text = "No Filter"; ObjectID = "ggG-xb-nUG"; */
+"ggG-xb-nUG.text" = "Pas de filtre";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "h0N-si-a4r"; */
+"h0N-si-a4r.text" = "Emplacement";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "hFr-d4-81V"; */
+"hFr-d4-81V.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Number"; ObjectID = "i8I-Gu-n0r"; */
+"i8I-Gu-n0r.text" = "Numéro";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "jve-jU-znB"; */
+"jve-jU-znB.text" = "Vers";
+
+/* Class = "UILabel"; text = "Time*"; ObjectID = "kLq-EK-QyX"; */
+"kLq-EK-QyX.text" = "Heure*";
+
+/* Class = "UIButton"; normalTitle = "+  New Menu"; ObjectID = "kYS-xm-IJB"; */
+"kYS-xm-IJB.normalTitle" = "  +  Nouveau menu  ";
+
+/* Class = "UIButton"; normalTitle = "PRINT ALERGEN"; ObjectID = "mTH-ro-C9p"; */
+"mTH-ro-C9p.normalTitle" = "Imprimer étiquette allergène";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ope-Fu-WZh"; */
+"ope-Fu-WZh.text" = "Etiquette";
+
+/* Class = "UILabel"; text = "No Filter"; ObjectID = "osl-m2-0Rr"; */
+"osl-m2-0Rr.text" = "Pas de filtre";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "pV8-j3-tgh"; */
+"pV8-j3-tgh.text" = "De";
+
+/* Class = "UILabel"; text = "Filter"; ObjectID = "rIF-fw-1iT"; */
+"rIF-fw-1iT.text" = "Filtre";
+
+/* Class = "UIButton"; normalTitle = "Apply Filter"; ObjectID = "rQc-Od-2JI"; */
+"rQc-Od-2JI.normalTitle" = "Appliquer le filtre
+";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "sAH-Dz-W91"; */
+"sAH-Dz-W91.text" = "Titre";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "scu-Ts-fCr"; */
+"scu-Ts-fCr.text" = "Date";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "sgo-8R-eWh"; */
+"sgo-8R-eWh.normalTitle" = "Suivant";
+
+/* Class = "UILabel"; text = "Label Filter"; ObjectID = "uYh-0I-1cd"; */
+"uYh-0I-1cd.text" = "Filtre d'étiquette";
+
+/* Class = "UILabel"; text = "Add Items"; ObjectID = "vR4-oh-tsS"; */
+"vR4-oh-tsS.text" = "Ajouter un élément";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "xDb-B5-RjP"; */
+"xDb-B5-RjP.text" = "Vers";
+
+/* Class = "UIButton"; normalTitle = "Action"; ObjectID = "zPC-GF-eYz"; */
+"zPC-GF-eYz.normalTitle" = "Action";
+
+/* Class = "UILabel"; text = "Add Label"; ObjectID = "zky-mZ-7K6"; */
+"zky-mZ-7K6.text" = "Ajouter une étiquette";

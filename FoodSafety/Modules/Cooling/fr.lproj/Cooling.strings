@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "7CG-fg-ggm"; */
+"7CG-fg-ggm.text" = "Température";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "EBd-kJ-GQo"; */
+"EBd-kJ-GQo.text" = "Plats ou produits";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "GTD-9G-WLX"; */
+"GTD-9G-WLX.text" = "20 derniers relevés";
+
+/* Class = "UILabel"; text = "Cooling"; ObjectID = "Io9-gB-iam"; */
+"Io9-gB-iam.text" = "Refroidissement";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "Xjj-YK-jSm"; */
+"Xjj-YK-jSm.text" = "Heure";

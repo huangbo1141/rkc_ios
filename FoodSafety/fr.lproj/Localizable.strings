@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  FoodSafety
+
+  Created by BoHuang on 8/16/17.
+  Copyright © 2017 ITLove. All rights reserved.
+*/
+"connection_error"="Connection Error!";
+"input_domain"="Please input domain.";
+"invalid_domain"="Subdomain is not valid.";
+"input_username"="Merci d'entrer votre nom.";
+"input_password"="Merci d'entrer votre passe.";
+"input_goodtype"="Merci de selectionner un type de produit.";
+"input_date"="Merci d'entrer la date.";
+"input_time"="Merci d'entrer l'heure.";
+"input_temperature" = "Merci d'ajouter une température";
+"input_expire_date" = "Merci d'ajouter une date d'expiration.";
+"no_allergen" = "Il n'y a pas d'allergène.";
+"wrong_qrcode" = "Mauvais QR Code";
+"invalid_account"="Mot de passe et nom d'utilisateru invalide.";
+"alert"= "Alerte";
+"success"="Succès";
+"forgot_success" = "Le mot de passe est envoyé à votre compte de messagerie.";
+"fridge" = "Réfrigérateur";
+"freezer" = "Congélateur";
+"item" = "Plats ou produits";
+"reheating" = "Remise en température";
+"cooling" = "Refroidissment";
+"service" = "Service";
+"transport" = "Chaine du chaud/froid";
+"delivery" = "Traçabilité";
+"delivery_menu" = "Menu";
+"oil" = "Huile de friture";
+"cleaning" = "Plan de nettoyage";
+"laborartory" = "Analyses microbiologiques";
+"safety" = "Produits d'entretien";
+"pest" = "Nuisible";
+"notification" = "Notification";
+"signout" = "Déconnection";
+"delete_confirm" = "Voulez-vous supprimer cet élément?";
+"fresh_goods" = "Produits frais";
+"frozen_goods" = "Produits congelés";
+"dry_goods" = "Produits secs";
+"miscalleneous" = "Divers";
+"invalid_email" = "Email invalide.";
+"gluten" = "Gluten";
+"eggs" = "Oeuf";
+"fish" = "Poisson";
+"lupin" = "Lupin";
+"soybeans" = "Soja";
+"nuts" = "Noix";
+"peanuts" = "Cacahuète/arachide";
+"mustard" = "Moutarde";
+"milk" = "Lactose";
+"celery" = "Céleri";
+"cereals_containing_gluten" = "Céréales contenant du gluten";
+"cereals" = "Céréales contenant du gluten";
+"sesame_seeds" = "Sésame";
+"crustaceans" = "Crustacé";
+"molluscs" = "Mollusque";
+"sulphur_dioxide_and_sulphites" = "Sulphites";
+"sulphur" = "Sulphites";
+"fridge_assign"="Tâche:température réfrigérateur";
+"freezer_assign"="Tâche:température congélateur";
+"oil_assign"="Tâche:huile de friture";
+"clean_assign"="Tâche:Plan de nettoyage";
+"expired_assign"="Produits proche DLU/DLUO";
+"create_link"="https://the-haccp-app.com/fr/pricing-2/";
+"create_account"="Essai gratuit";

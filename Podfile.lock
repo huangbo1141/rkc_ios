@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
+  - FSCalendar (2.7.9)
+  - Intercom (3.2.8)
+  - IQKeyboardManager (4.0.10)
+  - MyLayout (1.4.1)
+  - PPSSignatureView (0.1.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Toast (3.1.0)
+  - UIImage+ImageCompress (0.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - Crashlytics
+  - Fabric
+  - FSCalendar
+  - Intercom
+  - IQKeyboardManager
+  - MyLayout (~> 1.4.1)
+  - PPSSignatureView
+  - SDWebImage (~> 3.8)
+  - Toast (~> 3.1.0)
+  - UIImage+ImageCompress
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  Intercom: cd2e7d259f23fa75d239ecc03e67a7d93e18fdfe
+  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  MyLayout: f249c583644853b1c4d1cb70b179955619982b58
+  PPSSignatureView: 746f1fc186dea15c248bc99cc64182f93af131b9
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  UIImage+ImageCompress: 6b38489f38075d569d9f25d72af7ecf5c84c1057
+
+PODFILE CHECKSUM: 21c1fbc2f7d4d443388d4dafe293fb8a2f7befee
+
+COCOAPODS: 1.1.1

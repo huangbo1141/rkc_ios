@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Start Upload"; ObjectID = "Qhr-Rq-8E6"; */
+"Qhr-Rq-8E6.normalTitle" = "Commencer le téléchargement";
+
+/* Class = "UILabel"; text = "filename.jpg"; ObjectID = "X2D-8r-HF5"; */
+"X2D-8r-HF5.text" = "filename.jpg";
+
+/* Class = "UILabel"; text = "Uploading..."; ObjectID = "rwp-gm-CIf"; */
+"rwp-gm-CIf.text" = "Téléchargement en cours...";

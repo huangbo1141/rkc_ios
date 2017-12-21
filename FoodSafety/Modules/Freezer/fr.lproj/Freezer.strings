@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "SUN"; ObjectID = "1hT-o3-ywv"; */
+"1hT-o3-ywv.text" = "Dim";
+
+/* Class = "UILabel"; text = "LOCATION"; ObjectID = "E83-JD-m3e"; */
+"E83-JD-m3e.text" = "Emplacement";
+
+/* Class = "UILabel"; text = "Freezer"; ObjectID = "GDG-Zb-pSv"; */
+"GDG-Zb-pSv.text" = "Congélateur";
+
+/* Class = "UILabel"; text = "THU"; ObjectID = "QVY-a5-Wcr"; */
+"QVY-a5-Wcr.text" = "Jeu";
+
+/* Class = "UILabel"; text = "FRI"; ObjectID = "Ssq-eS-ZX2"; */
+"Ssq-eS-ZX2.text" = "Ven";
+
+/* Class = "UILabel"; text = "SAT"; ObjectID = "d6h-aS-2zO"; */
+"d6h-aS-2zO.text" = "Sam";
+
+/* Class = "UILabel"; text = "Evening"; ObjectID = "d72-AA-d2x"; */
+"d72-AA-d2x.text" = "Soir";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "eEV-O4-hqP"; */
+"eEV-O4-hqP.text" = "Heure";
+
+/* Class = "UILabel"; text = "Afternoon"; ObjectID = "i8l-lJ-2Ib"; */
+"i8l-lJ-2Ib.text" = "Après-midi";
+
+/* Class = "UILabel"; text = "MON"; ObjectID = "naU-aW-gQh"; */
+"naU-aW-gQh.text" = "Lun";
+
+/* Class = "UILabel"; text = "Morning"; ObjectID = "pDP-YC-he6"; */
+"pDP-YC-he6.text" = "Matin";
+
+/* Class = "UILabel"; text = "TUE"; ObjectID = "q2L-8D-A5F"; */
+"q2L-8D-A5F.text" = "Mar";
+
+/* Class = "UILabel"; text = "VALUE"; ObjectID = "yQ8-5b-5Rr"; */
+"yQ8-5b-5Rr.text" = "Température";
+
+/* Class = "UILabel"; text = "WED"; ObjectID = "yq9-an-8O9"; */
+"yq9-an-8O9.text" = "Mer";

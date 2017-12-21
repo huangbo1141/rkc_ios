@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "View Detail"; ObjectID = "EEb-7P-Sgd"; */
+"EEb-7P-Sgd.text" = "Voir les détails";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "FF3-6g-yd7"; */
+"FF3-6g-yd7.text" = "De";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "GUG-Nz-cRc"; */
+"GUG-Nz-cRc.normalTitle" = "Effacer";
+
+/* Class = "UIButton"; normalTitle = "Message"; ObjectID = "Nr2-3C-ZD5"; */
+"Nr2-3C-ZD5.normalTitle" = "Message";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "PoF-wC-9O6"; */
+"PoF-wC-9O6.text" = "Notification";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ppx-CK-OpO"; */
+"Ppx-CK-OpO.text" = "Etiquette";
+
+/* Class = "UIButton"; normalTitle = "Time"; ObjectID = "UXa-aT-5zK"; */
+"UXa-aT-5zK.normalTitle" = "Heure";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "gfl-Y2-RVb"; */
+"gfl-Y2-RVb.text" = "Description";
+
+/* Class = "UILabel"; text = "Last 10 messages"; ObjectID = "lfg-gZ-krF"; */
+"lfg-gZ-krF.text" = "10 derniers messages";
+
+/* Class = "UIButton"; normalTitle = "From"; ObjectID = "lw8-6Y-gx9"; */
+"lw8-6Y-gx9.normalTitle" = "De";

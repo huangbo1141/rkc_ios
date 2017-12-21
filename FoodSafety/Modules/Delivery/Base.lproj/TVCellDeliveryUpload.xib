@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic-Regular.TTF">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVCellDeliveryUpload" rowHeight="112" id="KGk-i7-Jjw" customClass="TVCellDeliveryUpload">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKX-XN-EVn">
+                        <rect key="frame" x="0.0" y="0.0" width="454" height="109"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="row_back" translatesAutoresizingMaskIntoConstraints="NO" id="pti-Z3-6SH">
+                                <rect key="frame" x="0.0" y="0.0" width="454" height="109"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zcC-Ki-qQv" customClass="MyImageView">
+                                <rect key="frame" x="16" y="16" width="67" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zcC-Ki-qQv" secondAttribute="height" multiplier="69:70" id="4Jg-IY-uM5"/>
+                                    <constraint firstAttribute="height" constant="68" id="M7z-Br-t4g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="filename.jpg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2D-8r-HF5">
+                                <rect key="frame" x="98" y="16" width="85.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.21176470589999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-Rq-8E6" customClass="BorderButton">
+                                <rect key="frame" x="98" y="62.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.70196078429999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NKg-2s-3Mn"/>
+                                    <constraint firstAttribute="width" constant="100" id="tOW-zc-LRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                                <state key="normal" title="Start Upload"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-gm-CIf">
+                                <rect key="frame" x="98" y="68.5" width="82.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.21176470589999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pti-Z3-6SH" firstAttribute="centerX" secondItem="pKX-XN-EVn" secondAttribute="centerX" id="9cW-xv-J9U"/>
+                            <constraint firstItem="X2D-8r-HF5" firstAttribute="leading" secondItem="zcC-Ki-qQv" secondAttribute="trailing" constant="15" id="FyR-5z-44r"/>
+                            <constraint firstItem="pti-Z3-6SH" firstAttribute="centerY" secondItem="pKX-XN-EVn" secondAttribute="centerY" id="Lsp-tV-iJZ"/>
+                            <constraint firstItem="zcC-Ki-qQv" firstAttribute="leading" secondItem="pKX-XN-EVn" secondAttribute="leading" constant="16" id="OVw-GW-zTH"/>
+                            <constraint firstAttribute="bottom" secondItem="zcC-Ki-qQv" secondAttribute="bottom" constant="16" id="PX8-bG-PuO"/>
+                            <constraint firstAttribute="bottom" secondItem="rwp-gm-CIf" secondAttribute="bottom" constant="23" id="PyA-k6-Tbc"/>
+                            <constraint firstItem="pti-Z3-6SH" firstAttribute="width" secondItem="pKX-XN-EVn" secondAttribute="width" id="QLz-vS-nPa"/>
+                            <constraint firstItem="X2D-8r-HF5" firstAttribute="top" secondItem="pKX-XN-EVn" secondAttribute="top" constant="16" id="bpz-Yf-EiE"/>
+                            <constraint firstItem="rwp-gm-CIf" firstAttribute="leading" secondItem="zcC-Ki-qQv" secondAttribute="trailing" constant="15" id="fiL-WA-amc"/>
+                            <constraint firstItem="zcC-Ki-qQv" firstAttribute="top" secondItem="pKX-XN-EVn" secondAttribute="top" constant="16" id="iRu-pe-SYR"/>
+                            <constraint firstItem="pti-Z3-6SH" firstAttribute="height" secondItem="pKX-XN-EVn" secondAttribute="height" id="uxw-ot-ygH"/>
+                            <constraint firstItem="Qhr-Rq-8E6" firstAttribute="leading" secondItem="zcC-Ki-qQv" secondAttribute="trailing" constant="15" id="z5K-Q7-Jxp"/>
+                            <constraint firstAttribute="bottom" secondItem="Qhr-Rq-8E6" secondAttribute="bottom" constant="16.5" id="zx2-6D-pN3"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhU-wJ-Pob">
+                        <rect key="frame" x="398" y="36" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Q7H-Z1-7O9"/>
+                            <constraint firstAttribute="height" constant="36" id="vTt-ix-uWG"/>
+                        </constraints>
+                        <state key="normal" image="ic_delete_white_24dp"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="pKX-XN-EVn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Tj-9O-bYz"/>
+                    <constraint firstItem="pKX-XN-EVn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="Clo-Ao-2Sz"/>
+                    <constraint firstItem="pKX-XN-EVn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GZh-iA-bYe"/>
+                    <constraint firstAttribute="trailing" secondItem="vhU-wJ-Pob" secondAttribute="trailing" constant="20" id="hP0-cq-Vt0"/>
+                    <constraint firstItem="vhU-wJ-Pob" firstAttribute="centerY" secondItem="pti-Z3-6SH" secondAttribute="centerY" id="nYK-dr-e6c"/>
+                    <constraint firstItem="pKX-XN-EVn" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="o9X-xb-jIO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnDelete" destination="vhU-wJ-Pob" id="0ub-sS-xtb"/>
+                <outlet property="btnStartUpload" destination="Qhr-Rq-8E6" id="CQN-TU-bsY"/>
+                <outlet property="imgPhoto" destination="zcC-Ki-qQv" id="PCH-A0-ctz"/>
+                <outlet property="lblFileName" destination="X2D-8r-HF5" id="xih-1N-ah9"/>
+                <outlet property="lblStatus" destination="rwp-gm-CIf" id="Epl-RR-JcF"/>
+            </connections>
+            <point key="canvasLocation" x="-74" y="-341"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete_white_24dp" width="36" height="36"/>
+        <image name="row_back" width="627" height="109"/>
+    </resources>
+</document>

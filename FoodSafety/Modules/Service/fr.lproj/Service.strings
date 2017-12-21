@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Service"; ObjectID = "12D-Aj-qgy"; */
+"12D-Aj-qgy.text" = "Service";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "Ke5-oP-sY6"; */
+"Ke5-oP-sY6.text" = "Plats ou produits";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "ckx-bM-meh"; */
+"ckx-bM-meh.text" = "Heure";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "qkc-aT-e7X"; */
+"qkc-aT-e7X.text" = "Température";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "yEE-HR-LKq"; */
+"yEE-HR-LKq.text" = "20 derniers relevés";

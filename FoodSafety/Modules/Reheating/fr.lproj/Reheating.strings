@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "7tN-v7-bJC"; */
+"7tN-v7-bJC.text" = "2017";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "C3p-dU-xtl"; */
+"C3p-dU-xtl.text" = "Température";
+
+/* Class = "UILabel"; text = "Reheating"; ObjectID = "CVp-4K-Ntr"; */
+"CVp-4K-Ntr.text" = "Remise en température";
+
+/* Class = "UILabel"; text = "Operator"; ObjectID = "HyV-zc-WZG"; */
+"HyV-zc-WZG.text" = "Operateur";
+
+/* Class = "UILabel"; text = "Captured Image"; ObjectID = "Q3f-JR-wpq"; */
+"Q3f-JR-wpq.text" = "Photo";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "QKG-Wn-wqa"; */
+"QKG-Wn-wqa.text" = "20 derniers relevés";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "TQD-Cc-SpZ"; */
+"TQD-Cc-SpZ.text" = "Plats ou produits";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "Vq6-Ep-SwF"; */
+"Vq6-Ep-SwF.text" = "2017";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "aoN-TZ-4Ld"; */
+"aoN-TZ-4Ld.text" = "Heure";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "bRo-O9-Ne8"; */
+"bRo-O9-Ne8.normalTitle" = "Effacer";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "et0-ks-ZRS"; */
+"et0-ks-ZRS.text" = "Temperature";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "fJq-bZ-odF"; */
+"fJq-bZ-odF.text" = "Description";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "mLh-eQ-SGe"; */
+"mLh-eQ-SGe.text" = "Heure";
+
+/* Class = "UILabel"; text = "View Detail"; ObjectID = "qKn-Er-EL0"; */
+"qKn-Er-EL0.text" = "Voir les détails";
+
+/* Class = "UILabel"; text = "Fridge Location"; ObjectID = "x21-HX-Rvd"; */
+"x21-HX-Rvd.text" = "Fridge Location";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "yBm-YR-1cR"; */
+"yBm-YR-1cR.text" = "Item";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "yUC-VL-Sj7"; */
+"yUC-VL-Sj7.text" = "2017";

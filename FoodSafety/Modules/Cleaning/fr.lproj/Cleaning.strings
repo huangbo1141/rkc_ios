@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Area*"; ObjectID = "0Lo-q3-6vG"; */
+"0Lo-q3-6vG.text" = "Lieu*";
+
+/* Class = "UILabel"; text = "ITEM"; ObjectID = "BnH-F3-ZdC"; */
+"BnH-F3-ZdC.text" = "Elément";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Cgm-fB-YlT"; */
+"Cgm-fB-YlT.text" = "Description";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "Mlz-bw-fxN"; */
+"Mlz-bw-fxN.text" = "20 derniers relevés";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "NMY-ny-VnG"; */
+"NMY-ny-VnG.normalTitle" = "Suivant";
+
+/* Class = "UILabel"; text = "Capture"; ObjectID = "Qgp-sd-4uZ"; */
+"Qgp-sd-4uZ.text" = "Saisir";
+
+/* Class = "UILabel"; text = "Cleaning"; ObjectID = "RoF-xa-lln"; */
+"RoF-xa-lln.text" = "Plan de nettoyage";
+
+/* Class = "UIButton"; normalTitle = "ACCEPT"; ObjectID = "U0Q-zg-cGo"; */
+"U0Q-zg-cGo.normalTitle" = "Accepter";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "UUv-Ka-kLf"; */
+"UUv-Ka-kLf.text" = "Heure";
+
+/* Class = "UITextField"; placeholder = "Area"; ObjectID = "WzT-aX-w3u"; */
+"WzT-aX-w3u.placeholder" = "Lieu";
+
+/* Class = "UILabel"; text = "Schedule"; ObjectID = "Ztp-pc-XyA"; */
+"Ztp-pc-XyA.text" = "Planifier une tâche";
+
+/* Class = "UILabel"; text = "Select Item"; ObjectID = "eyZ-KX-au0"; */
+"eyZ-KX-au0.text" = "sélectionner un article";
+
+/* Class = "UILabel"; text = "Scan"; ObjectID = "gKc-1J-XC3"; */
+"gKc-1J-XC3.text" = "Scannez";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "gWc-FW-STh"; */
+"gWc-FW-STh.normalTitle" = "Suivant";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "h6T-Sd-k6L"; */
+"h6T-Sd-k6L.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "nEZ-91-eiK"; */
+"nEZ-91-eiK.text" = "Heure";
+
+/* Class = "UILabel"; text = "Item*"; ObjectID = "pAE-qJ-Xis"; */
+"pAE-qJ-Xis.text" = "Elément*";
+
+/* Class = "UIButton"; normalTitle = "DECLINE"; ObjectID = "pSM-kR-oJx"; */
+"pSM-kR-oJx.normalTitle" = "Décliner";
+
+/* Class = "UILabel"; text = "ITEM"; ObjectID = "ylW-13-Z4f"; */
+"ylW-13-Z4f.text" = "Elément";

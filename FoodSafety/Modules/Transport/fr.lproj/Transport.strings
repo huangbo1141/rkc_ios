@@ -1,0 +1,255 @@
+
+/* Class = "UILabel"; text = "Departure"; ObjectID = "0ha-yg-L7L"; */
+"0ha-yg-L7L.text" = "Depart";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "0m7-Rj-RAX"; */
+"0m7-Rj-RAX.text" = "2017";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "0p7-Fd-1q8"; */
+"0p7-Fd-1q8.text" = "2017";
+
+/* Class = "UILabel"; text = "Fridge Location"; ObjectID = "1UR-Ba-BoF"; */
+"1UR-Ba-BoF.text" = "Fridge Location";
+
+/* Class = "UILabel"; text = "Fridge Location"; ObjectID = "2O0-4V-mLO"; */
+"2O0-4V-mLO.text" = "Fridge Location";
+
+/* Class = "UILabel"; text = "Invoice Number"; ObjectID = "2nQ-n0-HhB"; */
+"2nQ-n0-HhB.text" = "Numéro de bon de livraison/facture";
+
+/* Class = "UILabel"; text = "Good Image"; ObjectID = "2tn-Hp-Gya"; */
+"2tn-Hp-Gya.text" = "Photo des produits";
+
+/* Class = "UIButton"; normalTitle = "Departure"; ObjectID = "3NR-EA-TuP"; */
+"3NR-EA-TuP.normalTitle" = "Depart";
+
+/* Class = "UILabel"; text = "Invoice Image"; ObjectID = "3mF-I7-kHY"; */
+"3mF-I7-kHY.text" = "Bon de livraison/facture";
+
+/* Class = "UIButton"; normalTitle = "delete"; ObjectID = "40x-nr-vU8"; */
+"40x-nr-vU8.normalTitle" = "Effacer";
+
+/* Class = "UIButton"; normalTitle = "Time"; ObjectID = "4id-3x-WJA"; */
+"4id-3x-WJA.normalTitle" = "Heure";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "521-kD-b4h"; */
+"521-kD-b4h.normalTitle" = "Accepter";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "5pX-Ub-ZVi"; */
+"5pX-Ub-ZVi.text" = "Heure";
+
+/* Class = "UILabel"; text = "Good Image"; ObjectID = "5tJ-0e-KFu"; */
+"5tJ-0e-KFu.text" = "Photo des produits";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "72M-KK-6M5"; */
+"72M-KK-6M5.text" = "Enregistrer";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "7iE-C4-Ing"; */
+"7iE-C4-Ing.normalTitle" = "Enregistrer";
+
+/* Class = "UILabel"; text = "Invoice Number"; ObjectID = "97L-Ah-SJK"; */
+"97L-Ah-SJK.text" = "Numéro de bon de livraison/facture";
+
+/* Class = "UILabel"; text = "Temperature*"; ObjectID = "9Oh-DC-9Tu"; */
+"9Oh-DC-9Tu.text" = "Temperature*";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "AST-BW-zJ1"; */
+"AST-BW-zJ1.text" = "Temperature";
+
+/* Class = "UILabel"; text = "View Detail"; ObjectID = "AYO-o0-i5j"; */
+"AYO-o0-i5j.text" = "Voir les détails";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "BAk-Gy-cOL"; */
+"BAk-Gy-cOL.text" = "2017";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "BN4-Ev-EJk"; */
+"BN4-Ev-EJk.text" = "Plats ou produits";
+
+/* Class = "UILabel"; text = "Good Image"; ObjectID = "E5G-WA-wkZ"; */
+"E5G-WA-wkZ.text" = "Photo des produits";
+
+/* Class = "UISegmentedControl"; EK5-0Y-tB5.segmentTitles[0] = "DEPATURE"; ObjectID = "EK5-0Y-tB5"; */
+"EK5-0Y-tB5.segmentTitles[0]" = "Depart";
+
+/* Class = "UISegmentedControl"; EK5-0Y-tB5.segmentTitles[1] = "ARRIVAL"; ObjectID = "EK5-0Y-tB5"; */
+"EK5-0Y-tB5.segmentTitles[1]" = "Arrivée";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "Eba-Tx-Z4y"; */
+"Eba-Tx-Z4y.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Fce-3z-CKp"; */
+"Fce-3z-CKp.normalTitle" = "Suivant";
+
+/* Class = "UIButton"; normalTitle = "Decline"; ObjectID = "IL9-Lf-th6"; */
+"IL9-Lf-th6.normalTitle" = "Décliner";
+
+/* Class = "UILabel"; text = "Fridge Location"; ObjectID = "Iw6-2z-sKU"; */
+"Iw6-2z-sKU.text" = "Fridge Location";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "JBA-Jq-Uze"; */
+"JBA-Jq-Uze.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "JPD-jM-w2v"; */
+"JPD-jM-w2v.text" = "Temperature";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Kb6-db-hZ0"; */
+"Kb6-db-hZ0.text" = "Description";
+
+/* Class = "UILabel"; text = "Last 20 logs"; ObjectID = "Lxx-3h-ln0"; */
+"Lxx-3h-ln0.text" = "20 derniers relevés";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "LzT-ud-pgf"; */
+"LzT-ud-pgf.text" = "Heure";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "NAo-6j-psA"; */
+"NAo-6j-psA.text" = "Date";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "NuP-db-hOo"; */
+"NuP-db-hOo.text" = "2017";
+
+/* Class = "UILabel"; text = "Capture"; ObjectID = "OcR-dV-I8c"; */
+"OcR-dV-I8c.text" = "Saisir";
+
+/* Class = "UILabel"; text = "Arrival"; ObjectID = "PTm-RA-uH6"; */
+"PTm-RA-uH6.text" = "Arrivée";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "Q3O-rR-nW2"; */
+"Q3O-rR-nW2.text" = "2017";
+
+/* Class = "UILabel"; text = "Invoice Image"; ObjectID = "QJG-gj-vYs"; */
+"QJG-gj-vYs.text" = "Bon de livraison/facture";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "Qa2-m3-Bd1"; */
+"Qa2-m3-Bd1.normalTitle" = "Créer";
+
+/* Class = "UIButton"; normalTitle = "Item"; ObjectID = "Qbq-Ly-0db"; */
+"Qbq-Ly-0db.normalTitle" = "Item";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "RpB-lt-o0j"; */
+"RpB-lt-o0j.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Invoice Number"; ObjectID = "S8M-XZ-1ub"; */
+"S8M-XZ-1ub.text" = "Numéro de bon de livraison/facture";
+
+/* Class = "UILabel"; text = "Transport"; ObjectID = "Sfh-aE-614"; */
+"Sfh-aE-614.text" = "Chaine du froid/chaud";
+
+/* Class = "UILabel"; text = "Time*"; ObjectID = "T4L-P1-m2Z"; */
+"T4L-P1-m2Z.text" = "Heure*";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "U2E-NL-Rgy"; */
+"U2E-NL-Rgy.text" = "Date";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "UrQ-Sn-kqA"; */
+"UrQ-Sn-kqA.text" = "2017";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "WUZ-sc-Zte"; */
+"WUZ-sc-Zte.text" = "Date";
+
+/* Class = "UILabel"; text = "Area*"; ObjectID = "WfN-wB-gDS"; */
+"WfN-wB-gDS.text" = "Lieu*";
+
+/* Class = "UILabel"; text = "Temperature*"; ObjectID = "Wqj-T6-BWA"; */
+"Wqj-T6-BWA.text" = "Temperature*";
+
+/* Class = "UILabel"; text = "Invoice Image"; ObjectID = "Wwu-Pn-KjD"; */
+"Wwu-Pn-KjD.text" = "Bon de livraison/facture";
+
+/* Class = "UILabel"; text = "Invoice Image"; ObjectID = "Xak-WE-MSe"; */
+"Xak-WE-MSe.text" = "Bon de livraison/facture";
+
+/* Class = "UILabel"; text = "Operator"; ObjectID = "ZZY-aZ-y1D"; */
+"ZZY-aZ-y1D.text" = "Operateur";
+
+/* Class = "UILabel"; text = "Invoice Number"; ObjectID = "bIb-Ys-q7V"; */
+"bIb-Ys-q7V.text" = "Numéro de bon de livraison/facture";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "bQ9-bG-UGN"; */
+"bQ9-bG-UGN.text" = "2017";
+
+/* Class = "UILabel"; text = "Area*"; ObjectID = "cga-HA-DhA"; */
+"cga-HA-DhA.text" = "Lieu*";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "chq-2f-4em"; */
+"chq-2f-4em.text" = "2017";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "dRF-xe-gAy"; */
+"dRF-xe-gAy.text" = "Description";
+
+/* Class = "UILabel"; text = "Operator"; ObjectID = "ejQ-RD-bt6"; */
+"ejQ-RD-bt6.text" = "Operateur";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "gYy-P7-Zou"; */
+"gYy-P7-Zou.text" = "2017";
+
+/* Class = "UILabel"; text = "Departure"; ObjectID = "hja-f3-XVl"; */
+"hja-f3-XVl.text" = "Depart";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "i0V-AM-KE8"; */
+"i0V-AM-KE8.text" = "2017";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "iKw-EL-w8f"; */
+"iKw-EL-w8f.text" = "Temperature";
+
+/* Class = "UIButton"; normalTitle = "Arrival"; ObjectID = "lsG-vU-LGZ"; */
+"lsG-vU-LGZ.normalTitle" = "Arrivée";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "m0x-yD-Dia"; */
+"m0x-yD-Dia.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "m5n-Ri-I7A"; */
+"m5n-Ri-I7A.text" = "Description";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "mfq-Xk-wka"; */
+"mfq-Xk-wka.text" = "2017";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "nd1-sE-KtS"; */
+"nd1-sE-KtS.text" = "2017";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "ngc-3t-u9j"; */
+"ngc-3t-u9j.text" = "2017";
+
+/* Class = "UILabel"; text = "Good Image"; ObjectID = "oTu-Bg-4sg"; */
+"oTu-Bg-4sg.text" = "Photo des produits";
+
+/* Class = "UITextField"; text = "0"; ObjectID = "pdS-3X-mVb"; */
+"pdS-3X-mVb.text" = "0";
+
+/* Class = "UILabel"; text = "Operator"; ObjectID = "pfC-RV-Gk2"; */
+"pfC-RV-Gk2.text" = "Operateur";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "riM-Gb-YgP"; */
+"riM-Gb-YgP.text" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "sMR-CU-qVf"; */
+"sMR-CU-qVf.normalTitle" = "Suivant";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "scp-wd-DTk"; */
+"scp-wd-DTk.normalTitle" = "Suivant";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "thi-7A-C5H"; */
+"thi-7A-C5H.text" = "Heure";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "toQ-xC-VXL"; */
+"toQ-xC-VXL.text" = "2017";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "uNn-21-YpW"; */
+"uNn-21-YpW.text" = "Description";
+
+/* Class = "UITextField"; text = "0"; ObjectID = "vRy-h1-pMS"; */
+"vRy-h1-pMS.text" = "0";
+
+/* Class = "UILabel"; text = "Date*"; ObjectID = "vWW-ZG-ooK"; */
+"vWW-ZG-ooK.text" = "Date*";
+
+/* Class = "UILabel"; text = "2017"; ObjectID = "w3p-Sr-b2o"; */
+"w3p-Sr-b2o.text" = "2017";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "xQX-QL-PNm"; */
+"xQX-QL-PNm.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Date*"; ObjectID = "xz1-Jr-YRm"; */
+"xz1-Jr-YRm.text" = "Date*";
+
+/* Class = "UILabel"; text = "Time*"; ObjectID = "xzc-Mr-tt7"; */
+"xzc-Mr-tt7.text" = "Time*";

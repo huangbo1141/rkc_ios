@@ -1,0 +1,72 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "1tK-Z1-j3l"; */
+"1tK-Z1-j3l.normalTitle" = "Enregistrer";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "2Wt-bI-dCC"; */
+"2Wt-bI-dCC.normalTitle" = "Effacer";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "5Ay-BV-mof"; */
+"5Ay-BV-mof.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "5Wu-nk-I6t"; */
+"5Wu-nk-I6t.placeholder" = "Nouveau de mot de passe";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "7zP-z7-vQn"; */
+"7zP-z7-vQn.normalTitle" = "Annuler";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "AJm-Va-USi"; */
+"AJm-Va-USi.normalTitle" = "Soumettre";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Bcb-we-Asv"; */
+"Bcb-we-Asv.placeholder" = "Mot de passe";
+
+/* Class = "UILabel"; text = "User Info"; ObjectID = "Bhv-pz-TIA"; */
+"Bhv-pz-TIA.text" = "Info utilisateur";
+
+/* Class = "UILabel"; text = "User Info"; ObjectID = "Dd8-I9-ARe"; */
+"Dd8-I9-ARe.text" = "Info utilisateur";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "DhB-Qd-q1a"; */
+"DhB-Qd-q1a.placeholder" = "Numéro de téléphone";
+
+/* Class = "UILabel"; text = "User"; ObjectID = "KGZ-7Z-W9U"; */
+"KGZ-7Z-W9U.text" = "Utilisateur";
+
+/* Class = "UILabel"; text = "Today's assigned tasks"; ObjectID = "QdR-iS-Krl"; */
+"QdR-iS-Krl.text" = "Tâches du jour";
+
+/* Class = "UILabel"; text = "User Info"; ObjectID = "UjJ-ld-OlH"; */
+"UjJ-ld-OlH.text" = "Info utilisateur";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "WQp-uV-7zW"; */
+"WQp-uV-7zW.placeholder" = "Nom d'utilisateur";
+
+/* Class = "UILabel"; text = "Fridge Temperature"; ObjectID = "XAx-3t-9UT"; */
+"XAx-3t-9UT.text" = "Fridge Temperature";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "Yyb-Q8-GgE"; */
+"Yyb-Q8-GgE.normalTitle" = "Connect";
+
+/* Class = "UITextField"; placeholder = "Subdomain"; ObjectID = "Z96-ym-Z2g"; */
+"Z96-ym-Z2g.placeholder" = "Sous domaine";
+
+/* Class = "UILabel"; text = "Task"; ObjectID = "ahw-Ew-tDq"; */
+"ahw-Ew-tDq.text" = "Tâche";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "biw-0a-c47"; */
+"biw-0a-c47.normalTitle" = "Mot de passe oublié?";
+
+/* Class = "UIButton"; normalTitle = "Change domain"; ObjectID = "dse-s4-h6c"; */
+"dse-s4-h6c.normalTitle" = "Changer de mot de domain";
+
+/* Class = "UILabel"; text = "Signature"; ObjectID = "nVA-uG-OZd"; */
+"nVA-uG-OZd.text" = "Signature";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "pcC-Pa-yKr"; */
+"pcC-Pa-yKr.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Menu"; ObjectID = "qsK-Q7-cXy"; */
+"qsK-Q7-cXy.text" = "Menu";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "vqq-Fu-qd9"; */
+"vqq-Fu-qd9.placeholder" = "Email Address";

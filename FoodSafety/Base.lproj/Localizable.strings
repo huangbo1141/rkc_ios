@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  FoodSafety
+
+  Created by BoHuang on 8/16/17.
+  Copyright © 2017 ITLove. All rights reserved.
+*/
+"connection_error"="Connection Error!";
+"input_domain"="Please input domain.";
+"invalid_domain"="Subdomain is not valid.";
+"input_username"="Please enter username.";
+"input_password"="Please enter password.";
+"input_goodtype"="Please enter good type.";
+"input_date"="Please enter date.";
+"input_time"="Please enter time.";
+"input_temperature" = "Please enter temperature";
+"input_expire_date" = "Please enter expire date.";
+"no_allergen" = "There is no alergen.";
+"wrong_qrcode" = "Wrong QR Code.";
+"invalid_account"="Invalid username or password.";
+"invalid_email"="Invalid email.";
+"alert"= "Alert";
+"success"="Success";
+"forgot_success" = "Password is sent to your email account.";
+"fridge" = "Fridge";
+"freezer" = "Freezer";
+"item"="Item";
+"reheating"="Reheating";
+"cooling"="Cooling";
+"service"="Service";
+"transport"="Transport";
+"delivery"="Delivery";
+"delivery_menu"="Menu";
+"oil"="Oil";
+"cleaning"="Cleaning";
+"laborartory"="Laboratory";
+"safety"="Safety Management";
+"pest" = "Pest Management";
+"notification" = "Notification";
+"signout" = "Sign Out";
+"delete_confirm" = "Do you want to delete this item?";
+"fresh_goods" = "Fresh Goods";
+"frozen_goods" = "Frozen Goods";
+"dry_goods" = "Dry Goods";
+"miscalleneous" = "Miscalleneous";
+"invalid_email"="Invalid email.";
+"gluten"="Gluten";
+"cereals_containing_gluten"="Cereals Containing Gluten";
+"cereals"="Cereals Containing Gluten";
+"sesame_seeds"="Sesame Seeds";
+"crustaceans"="Crustaceans";
+"molluscs"="Molluscs";
+"eggs"="Eggs";
+"fish"="Fish";
+"lupin"="Lupin";
+"soybeans"="Soybeans";
+"nuts"="Nuts";
+"peanuts"="Peanuts";
+"mustard"="Mustard";
+"milk"="Milk";
+"celery"="Celery";
+"sulphur_dioxide_and_sulphites"="Sulphur Dioxide And Sulphites";
+"sulphur"="Sulphur Dioxide And Sulphites";
+"fridge_assign"="Today's fridge tasks";
+"freezer_assign"="Today's freezer tasks";
+"oil_assign"="Today's oil tasks";
+"clean_assign"="Today's cleaning tasks";
+"expired_assign"="Items near expiry";
+"create_link"="https://the-haccp-app.com/haccp-plan-pricing/";
+"create_account"="Try for free";
+

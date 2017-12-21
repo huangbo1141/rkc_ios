@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "1tK-Z1-j3l"; */
+"1tK-Z1-j3l.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "2Wt-bI-dCC"; */
+"2Wt-bI-dCC.normalTitle" = "Clear";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "5Ay-BV-mof"; */
+"5Ay-BV-mof.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "5Wu-nk-I6t"; */
+"5Wu-nk-I6t.placeholder" = "New Password";
+
+/* Class = "UITextField"; text = "secretsdecuisine"; ObjectID = "Bcb-we-Asv"; */
+"Bcb-we-Asv.text" = "secretsdecuisine";
+
+/* Class = "UILabel"; text = "User Info"; ObjectID = "Bhv-pz-TIA"; */
+"Bhv-pz-TIA.text" = "User Info";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "DhB-Qd-q1a"; */
+"DhB-Qd-q1a.placeholder" = "User Name";
+
+/* Class = "UILabel"; text = "User"; ObjectID = "KGZ-7Z-W9U"; */
+"KGZ-7Z-W9U.text" = "User";
+
+/* Class = "UILabel"; text = "Today's assigned tasks"; ObjectID = "QdR-iS-Krl"; */
+"QdR-iS-Krl.text" = "Today's assigned tasks";
+
+/* Class = "UILabel"; text = "User Info"; ObjectID = "UjJ-ld-OlH"; */
+"UjJ-ld-OlH.text" = "User Info";
+
+/* Class = "UITextField"; text = "secretsdecuisine"; ObjectID = "WQp-uV-7zW"; */
+"WQp-uV-7zW.text" = "secretsdecuisine";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "Yyb-Q8-GgE"; */
+"Yyb-Q8-GgE.normalTitle" = "Connect";
+
+/* Class = "UITextField"; text = "secretsdecuisine"; ObjectID = "Z96-ym-Z2g"; */
+"Z96-ym-Z2g.text" = "secretsdecuisine";
+
+/* Class = "UILabel"; text = "Task"; ObjectID = "ahw-Ew-tDq"; */
+"ahw-Ew-tDq.text" = "Task";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "biw-0a-c47"; */
+"biw-0a-c47.normalTitle" = "Forgot Password?";
+
+/* Class = "UILabel"; text = "Signature"; ObjectID = "nVA-uG-OZd"; */
+"nVA-uG-OZd.text" = "Signature";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "vqq-Fu-qd9"; */
+"vqq-Fu-qd9.placeholder" = "Email Address";

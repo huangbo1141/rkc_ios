@@ -1,0 +1,120 @@
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "0kb-r5-Kbx"; */
+"0kb-r5-Kbx.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "3ov-v2-XLZ"; */
+"3ov-v2-XLZ.normalTitle" = "Créer";
+
+/* Class = "UIButton"; normalTitle = "CREATE"; ObjectID = "428-ty-ttT"; */
+"428-ty-ttT.normalTitle" = "Créer";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "7d9-Rn-KsW"; */
+"7d9-Rn-KsW.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8EX-0l-JOU"; */
+"8EX-0l-JOU.normalTitle" = "Suivant";
+
+/* Class = "UIButton"; normalTitle = "PRINT LABEL"; ObjectID = "GaT-Nn-knj"; */
+"GaT-Nn-knj.normalTitle" = "Imprimer étiquette";
+
+/* Class = "UILabel"; text = "Scan"; ObjectID = "HWB-78-sm9"; */
+"HWB-78-sm9.text" = "Scannez";
+
+/* Class = "UILabel"; text = "Batch"; ObjectID = "Iif-4D-xPr    "; */
+"Iif-4D-xPr.text" = "Lot";
+
+/* Class = "UILabel"; text = "Allergens"; ObjectID = "K2e-Nq-HW6"; */
+"K2e-Nq-HW6.text" = "Allergénes";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "KNz-Jy-vIj"; */
+"KNz-Jy-vIj.normalTitle" = "Enregistrer";
+
+/* Class = "UILabel"; text = "Allergen"; ObjectID = "L30-ZP-gNW"; */
+"L30-ZP-gNW.text" = "Allergéne";
+
+/* Class = "UILabel"; text = "Batch Number"; ObjectID = "Ltl-6h-D8r"; */
+"Ltl-6h-D8r.text" = "Numéro de lot";
+
+/* Class = "UIButton"; normalTitle = "Batch"; ObjectID = "LvA-Dy-Yff"; */
+"LvA-Dy-Yff.normalTitle" = "Lot";
+
+/* Class = "UILabel"; text = "Filter"; ObjectID = "M1U-yc-PiZ"; */
+"M1U-yc-PiZ.text" = "Filtre";
+
+/* Class = "UIButton"; normalTitle = "PRINT ALERGEN"; ObjectID = "NMH-g5-adA"; */
+"NMH-g5-adA.normalTitle" = "Imprimer étiquette allergène";
+
+/* Class = "UIButton"; normalTitle = "Apply Filter"; ObjectID = "Nxh-6p-1da"; */
+"Nxh-6p-1da.normalTitle" = "Appliquer le filtre";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "O9x-xS-PVU"; */
+"O9x-xS-PVU.placeholder" = "Chercher";
+
+/* Class = "UILabel"; text = "Select Item"; ObjectID = "QtW-cj-Ohh"; */
+"QtW-cj-Ohh.text" = "Selectionner un élément";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "SGG-h0-gUO"; */
+"SGG-h0-gUO.normalTitle" = "Enregistrer";
+
+/* Class = "UIButton"; normalTitle = "PRINT LABEL"; ObjectID = "SP2-Zg-YXT"; */
+"SP2-Zg-YXT.normalTitle" = "Imprimer étiquette";
+
+/* Class = "UIButton"; normalTitle = "Expire"; ObjectID = "T0P-v5-GKd"; */
+"T0P-v5-GKd.normalTitle" = "Expiration";
+
+/* Class = "UILabel"; text = "Please select"; ObjectID = "Ts9-db-6sN"; */
+"Ts9-db-6sN.text" = "Sélectionnez s'il vous plaît";
+
+/* Class = "UILabel"; text = "Allergens"; ObjectID = "W8b-Dw-rBQ"; */
+"W8b-Dw-rBQ.text" = "Allergénes";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "XeQ-qm-gOK"; */
+"XeQ-qm-gOK.normalTitle" = "Effacer";
+
+/* Class = "UILabel"; text = "Expire Date"; ObjectID = "bgE-WY-RIO"; */
+"bgE-WY-RIO.text" = "DLC/DLUO";
+
+/* Class = "UILabel"; text = "Expire Date"; ObjectID = "cof-l8-62P"; */
+"cof-l8-62P.text" = "DLC/DLUO";
+
+/* Class = "UILabel"; text = "Item"; ObjectID = "dNU-Wd-TOH"; */
+"dNU-Wd-TOH.text" = "Plats ou produits";
+
+/* Class = "UILabel"; text = "Item Name"; ObjectID = "eGe-ut-7BE"; */
+"eGe-ut-7BE.text" = "Plats ou produits";
+
+/* Class = "UIButton"; normalTitle = "Name"; ObjectID = "eeh-AI-u4w"; */
+"eeh-AI-u4w.normalTitle" = "Nom";
+
+/* Class = "UILabel"; text = "Edit Item"; ObjectID = "jtT-Js-2ga"; */
+"jtT-Js-2ga.text" = "Editer";
+
+/* Class = "UILabel"; text = "Item Name"; ObjectID = "k4N-S8-tg0"; */
+"k4N-S8-tg0.text" = "Elément";
+
+/* Class = "UILabel"; text = "Select"; ObjectID = "kSf-7c-Zt2"; */
+"kSf-7c-Zt2.text" = "Sélectionner";
+
+/* Class = "UILabel"; text = "Item Name"; ObjectID = "m85-Xf-oFn"; */
+"m85-Xf-oFn.text" = "Elément";
+
+/* Class = "UIButton"; normalTitle = "+  New Item"; ObjectID = "p1Y-gP-QS9"; */
+"p1Y-gP-QS9.normalTitle" = "  +  Nouvel élément	 ";
+
+/* Class = "UILabel"; text = "Create Item"; ObjectID = "p43-qH-DLP"; */
+"p43-qH-DLP.text" = "Créer un élément";
+
+/* Class = "UILabel"; text = "Create Date"; ObjectID = "qAI-cc-etv"; */
+"qAI-cc-etv.text" = "Date de création";
+
+/* Class = "UIButton"; normalTitle = "PRINT ALERGEN"; ObjectID = "unW-J2-0Je"; */
+"unW-J2-0Je.normalTitle" = "Imprimer étiquette allergène";
+
+/* Class = "UILabel"; text = "No Filter"; ObjectID = "vHj-mo-7t1"; */
+"vHj-mo-7t1.text" = "Pas de filtre";
+
+/* Class = "UILabel"; text = "Expire Date"; ObjectID = "xzx-5p-P2h"; */
+"xzx-5p-P2h.text" = "DLC/DLUO";
+
+/* Class = "UILabel"; text = "Batch Number"; ObjectID = "ych-kk-t5h"; */
+"ych-kk-t5h.text" = "Numéro de lot";
