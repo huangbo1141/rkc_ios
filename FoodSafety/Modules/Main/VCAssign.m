@@ -13,6 +13,7 @@
 #import "AssignTaskModel.h"
 #import "UserInfo.h"
 #import "CircleBorderImageView.h"
+#import "MyAccordionView.h"
 
 @interface VCAssign ()
 @property (assign, nonatomic) long totalAssignViewHeight;
@@ -23,11 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.assignTaskItems = [[NSMutableArray alloc] init];
+    //self.assignTaskItems = [[NSMutableArray alloc] init];
     [self loadData];
     [[UserInfo shared] intercomUpdatePagePosition:@"Today's Assign"];
     
     [Intercom setLauncherVisible:YES];
+    
     
 }
 
@@ -40,262 +42,81 @@
     [[UserInfo shared] setLogined:false];
     [[UserInfo shared] setToken:@""];
     [UserInfo shared].mAccount.mToken = @"";
-    [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCConnect"];
-    
-    
+    [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCConnect" withOptions:@{@"reset":@"1"}];
 }
 
 - (IBAction)actionMenu:(id)sender {
     [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCMenu"];
 }
 - (void) configView {
-    self.assignContainer.orientation = MyOrientation_Vert;
+    for(UIView* view in self.navigationController.viewControllers){
+        NSLog(@"view %@",view);
+    }
+    
+    NSArray* array = self.stackView.subviews;
+    for (UIView* view in array) {
+//        [view removeFromSuperview];
+        [self.stackView removeArrangedSubview:view];
+    }
+    
     self.totalAssignViewHeight = 50;
     //[self.assignContainer removeAllSubviews];
-    NSMutableArray* models = nil;
-    NSString* sectionTitle = @"";
-    NSString* sectionImageName = @"";
-    for(int i=0; i<self.assignTaskItems.count; i++) {
-        AssignTaskModel* item = [self.assignTaskItems objectAtIndex:i];
-        if([item.mItemType isEqualToString:@"section"]) {
-            if(models != nil) {
-                UIView* view = [self createAssignSection:sectionTitle withSectionImageName:sectionImageName withModels:models];
-                if(view != nil) [self.assignContainer addSubview:view];
-                
-            }
-            models = [[NSMutableArray alloc] init];
-            sectionImageName = [item getLogoImageName];
-            sectionTitle = [item getSectionTitle];
-        }else {
-            if(models != nil) [models addObject:item];
+    if (self.map_data[@"fridges"]) {
+        NSArray* array = self.map_data[@"fridges"];
+        if (array.count>0) {
+            NSString* title = kLang(@"assign_header_fridge");
+            UIView* view = [MyAccordionView createView:title List:array Params:@{@"vc":self}];
+            [self.stackView addArrangedSubview:view];
         }
     }
-    
-    if(models != nil) {
-        MyLinearLayout* view = [self createAssignSection:sectionTitle withSectionImageName:sectionImageName withModels:models];
-   
-        if(view != nil) [self.assignContainer addSubview:view];
+    if (self.map_data[@"freezers"]) {
+        NSArray* array = self.map_data[@"freezers"];
+        if (array.count>0) {
+            NSString* title = kLang(@"assign_header_freezer");
+            UIView* view = [MyAccordionView createView:title List:array Params:@{@"vc":self}];
+            [self.stackView addArrangedSubview:view];
+        }
     }
-    if(_totalAssignViewHeight < 300)
-        _totalAssignViewHeight = 300;
-    
-    [self setAssignContainerHeight:_totalAssignViewHeight];
+    if (self.map_data[@"oils"]) {
+        NSArray* array = self.map_data[@"oils"];
+        if (array.count>0) {
+            NSString* title = kLang(@"assign_header_oil");
+            UIView* view = [MyAccordionView createView:title List:array Params:@{@"vc":self}];
+            [self.stackView addArrangedSubview:view];
+        }
+    }
+    if (self.map_data[@"cleanings"]) {
+        NSArray* array = self.map_data[@"cleanings"];
+        if (array.count>0) {
+            NSString* title = kLang(@"assign_header_cleaning");
+            UIView* view = [MyAccordionView createView:title List:array Params:@{@"vc":self}];
+            [self.stackView addArrangedSubview:view];
+        }
+    }
+    if (self.map_data[@"expire"]) {
+        NSArray* array = self.map_data[@"expire"];
+        if (array.count>0) {
+            NSString* title = kLang(@"assign_header_customtask");
+            UIView* view = [MyAccordionView createView:title List:array Params:@{@"vc":self}];
+            [self.stackView addArrangedSubview:view];
+        }
+    }
 }
--(MyLinearLayout*) createAssignSection:(NSString*) sectionTitle withSectionImageName:(NSString*) sectionImageName withModels:(NSArray*) models {
-    
-    MyLinearLayout *container = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Vert];
-    container.topPos.equalTo(@10);
-    container.leftPos.equalTo(@10);
-    container.rightPos.equalTo(@10);
-    container.wrapContentHeight = YES;
 
-    //section
-    MyLinearLayout *sectionName = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Horz];
-    sectionName.topPos.equalTo(@10);
-    sectionName.leftPos.equalTo(@0);
-    sectionName.rightPos.equalTo(@0);
-    sectionName.heightSize.equalTo(@40);
-    [container addSubview:sectionName];
-    
-    
-    UILabel *title = [UILabel new];
-    title.leftPos.equalTo(@100);
-    title.weight = 1;
-    title.topPos.equalTo(@0);
-    title.bottomPos.equalTo(@0);
-    title.text = sectionTitle;
-    [title setFont:[UIFont fontWithName:@"CenturyGothic-Bold" size:14]];
-    title.textColor = [UIColor colorWithRed:(11.0/255) green:(54.0/255) blue:(74.0/255) alpha:1];
-    [sectionName addSubview:title];
-    
-    //content
-    MyLinearLayout *content = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Horz];
-    content.topPos.equalTo(@0);
-    content.leftPos.equalTo(@0);
-    content.rightPos.equalTo(@0);
-    content.wrapContentHeight= YES;
-   // content.backgroundColor = [UIColor blueColor];
-    content.gravity = MyGravity_Vert_Center;
-    [container addSubview:content];
-    
-    //image
-    MyRelativeLayout * logoContent = [MyRelativeLayout new];
-    logoContent.widthSize.equalTo(@80);
-    logoContent.heightSize.equalTo(@80);
-    logoContent.gravity = MyGravity_Center;
-    [content addSubview:logoContent];
-
-    
-    CircleBorderImageView* logo = [CircleBorderImageView new];
-    logo.widthSize.equalTo(@60);
-    logo.heightSize.equalTo(@60);
-    logo.centerYPos.equalTo(@0);
-    logo.centerXPos.equalTo(@0);
-    logo.backgroundColor =[UIColor colorWithRed:(11.0/255) green:(54.0/255) blue:(74.0/255) alpha:1];
-
-    [logo setImage:[UIImage imageNamed:sectionImageName]];
-    [logoContent addSubview:logo];
-    
-    //Content
-    MyLinearLayout * mainContent = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Horz];
-    mainContent.weight = 1;
-
-    //mainContent.wrapContentHeight = YES;
-    [content addSubview: mainContent];
-    mainContent.heightSize.equalTo(@200);
-    mainContent.gravity = MyGravity_Vert_Center;
-    mainContent.backgroundImage = [UIImage imageNamed:@"row_back"];
-    
-    
-    MyLinearLayout * taskContent = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Vert];
-    taskContent.topPos.equalTo(@15);
-    taskContent.bottomPos.equalTo(@15);
-    taskContent.weight= 1;
- //   taskContent.backgroundColor = [UIColor blackColor];
-    [mainContent addSubview:taskContent];
-    
-    
-    MyLinearLayout * timeContent = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Vert];
-    
-    timeContent.topPos.equalTo(@15);
-    timeContent.bottomPos.equalTo(@15);
-
-    timeContent.weight= 1;
-    //timeContent.backgroundColor = [UIColor blueColor];
-    long mainContentHeight = 30;
-    [mainContent addSubview:timeContent];
-    for(AssignTaskModel* model in models) {
-        UIButton *task = [UIButton new];
-        task.leftPos.equalTo(@10);
-        task.rightPos.equalTo(@10);
-        task.topPos.equalTo(@0);
-        task.heightSize.equalTo(@40);
-        [task setTitle:@"Task Name" forState:UIControlStateNormal];
-        [task setFont:[UIFont fontWithName:@"CenturyGothic-Regular" size:14]];
-        [task setTitleColor:[UIColor colorWithRed:(11.0/255) green:(54.0/255) blue:(74.0/255) alpha:1] forState:UIControlStateNormal ];
-        [task setTag:model.mIndex];
-        [task addTarget:self action:@selector(taskPressed:) forControlEvents:UIControlEventTouchUpInside];
-   
-        
-        UILabel *time = [UILabel new];
-        time.leftPos.equalTo(@10);
-        time.rightPos.equalTo(@10);
-        time.topPos.equalTo(@0);
-        time.heightSize.equalTo(@40);
-        time.text = @"task Name";
-        [time setFont:[UIFont fontWithName:@"CenturyGothic-Regular" size:14]];
-        time.textColor = [UIColor colorWithRed:(11/255) green:(74/255) blue:54/255 alpha:1];
-  
-        
-        if([model.mTaskType isEqualToString:@"fridge"] || [model.mTaskType isEqualToString:@"freezer"]) {
-            time.text = kLang(model.mParams[@"time"]);
-            [task setTitle:model.mParams[@"lname"] forState:UIControlStateNormal];
-        }
-        if([model.mTaskType isEqualToString:@"oil"]) {
-            time.text = kLang(model.mParams[@"time"]);
-           [task setTitle:model.mParams[@"item_name"] forState:UIControlStateNormal];
-        }
-        if([model.mTaskType isEqualToString:@"expire"]) {
-            time.text = [[SettingModel shared] getSystemDateString: model.mParams[@"expire_date"]];
-            [task setTitle:model.mParams[@"name"] forState:UIControlStateNormal];
-        }
-        
-        if([model.mTaskType isEqualToString:@"cleaning"]) {
-            NSString* assignTime = model.mParams[@"time"];
-            NSDictionary* dict = [Global jsonToDict:assignTime];
-            if([dict isKindOfClass:[NSArray class]]) {
-                int inc =0;
-                for(NSString* timeStr in dict) {
-                    UIButton *cleaningTask = [UIButton new];
-                    cleaningTask.leftPos.equalTo(@10);
-                    cleaningTask.rightPos.equalTo(@10);
-                    cleaningTask.topPos.equalTo(@0);
-                    cleaningTask.heightSize.equalTo(@40);
-                    [cleaningTask setTitle:@"Task Name" forState:UIControlStateNormal];
-                    [cleaningTask setFont:[UIFont fontWithName:@"CenturyGothic-Regular" size:14]];
-                    [cleaningTask setTitleColor:[UIColor colorWithRed:(11/255) green:(54/255) blue:74/255 alpha:1] forState:UIControlStateNormal ];
-                    [cleaningTask setTag:model.mIndex];
-                    [cleaningTask addTarget:self action:@selector(taskPressed:) forControlEvents:UIControlEventTouchUpInside];
-                    
-                    
-                    UILabel *cleaingTime = [UILabel new];
-                    cleaingTime.leftPos.equalTo(@10);
-                    cleaingTime.rightPos.equalTo(@10);
-                    cleaingTime.topPos.equalTo(@0);
-                    cleaingTime.heightSize.equalTo(@40);
-                    cleaingTime.text = @"task Name";
-                    [cleaingTime setFont:[UIFont fontWithName:@"CenturyGothic-Regular" size:14]];
-                    cleaingTime.textColor = [UIColor colorWithRed:(11.0/255) green:(54.0/255) blue:(74.0/255) alpha:1];
-                    
-                    NSString* timeTitle;
-                    if([timeStr isEqualToString:@"1"])
-                        timeTitle = kLang(@"morning");
-                    else if([timeStr isEqualToString:@"2"])
-                        timeTitle = kLang(@"afternoon");
-                    else if([timeStr isEqualToString:@"3"])
-                        timeTitle = kLang(@"evening");
-                    [cleaingTime setText:timeTitle];
-                    if(inc == 0) {
-                        [cleaningTask setTitle:model.mParams[@"item"] forState:UIControlStateNormal];
-                    } else {
-                        [cleaningTask setHidden:YES];
-                    }
-                    [taskContent addSubview:cleaningTask];
-                    [timeContent addSubview:cleaingTime];
-                    mainContentHeight += 40;
-                    inc ++;
-                }
-            }
-
-        }else {
-            [taskContent addSubview:task];
-            [timeContent addSubview:time];
-            mainContentHeight += 40;
-        }
-    }
-    if(mainContentHeight <120)
-        mainContentHeight = 120;
-    
-    self.totalAssignViewHeight += mainContentHeight;
-    self.totalAssignViewHeight += 50;
-    mainContent.heightSize.equalTo([NSNumber numberWithLong:mainContentHeight]);
-    return container;
-}
 
 - (void) loadData {
-    [self.assignTaskItems removeAllObjects];
+    //[self.assignTaskItems removeAllObjects];
     [Global showIndicator:self];
     [[NetworkParser shared] serviceTodayTask:^(id responseObject, NSString *error) {
         if(error == nil) {
-            NSMutableArray* models= responseObject;
-            NSString* taskTypeTemp = @"none";
-            
-            int index = 0;
-            for(int i=0; i<models.count; i++) {
-                AssignTaskModel* model = [models objectAtIndex:i];
-                if(![model.mTaskType isEqualToString:taskTypeTemp]) {
-                    taskTypeTemp = model.mTaskType;
-                    AssignTaskModel* section = [[AssignTaskModel alloc] init];
-                    [section setItemType:YES withTaskType:model.mTaskType];
-                    section.mIndex = index;
-                    [self.assignTaskItems addObject: section];
-                    index++;
-                }
-                model.mIndex = index;
-                [self.assignTaskItems addObject:model];
-                index++;
-            }
+            NSMutableDictionary* map= responseObject;
+            self.map_data = map;
             [self configView];
         }
         [Global stopIndicator:self];
     }];
 }
-
-- (void)taskPressed : (id) sender
-{
-    UIButton* taskLink = (UIButton*)sender;
-    long index = taskLink.tag;
-    AssignTaskModel* model = [self.assignTaskItems objectAtIndex:index];
+-(void)taskPressedWithModel:(AssignTaskModel*)model {
     if([model.mItemType isEqualToString:@"section"])
         return;
     
@@ -311,14 +132,14 @@
                     logModel.mLocationCode = model.mParams[@"location_key_code"];
                     [Global switchScreen:self withStoryboardName:@"Fridge" withControllerName:@"VCFridgeLocation"];
                 }
-                     [Global stopIndicator:self];
+                [Global stopIndicator:self];
             }];
         } else {
             [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCProfile"];
         }
         
     }
-   if([model.mTaskType isEqualToString:@"freezer"]) {
+    if([model.mTaskType isEqualToString:@"freezer"]) {
         if([[UserInfo shared].mAccount  checkSignature]) {
             [Global showIndicator:self];
             [[NetworkParser shared] serviceGetFreezerInfo:^(id responseObject, NSString *error) {
@@ -346,7 +167,7 @@
                     [UserInfo shared].currentLogic = @"item";
                     ItemModel* logModel = [[ItemModel alloc] init];
                     [UserInfo shared].captureObject = logModel;
-              
+                    
                     if(model.mParams[@"id"] != nil) logModel.mId = model.mParams[@"id"];
                     if(model.mParams[@"key_code"] != nil) logModel.mKeyCode = model.mParams[@"key_code"];
                     if(model.mParams[@"name"] != nil) logModel.mName = model.mParams[@"name"];
@@ -367,7 +188,7 @@
                     [UserInfo shared].selectedObject = logModel;
                     [Global switchScreen:self withStoryboardName:@"Item" withControllerName:@"VCItemEdit"];
                     
-                   
+                    
                 }
                 [Global stopIndicator:self];
             }];
@@ -428,19 +249,17 @@
         
     }
 }
-
-
-
-- (void) setAssignContainerHeight :(double) height {
-    NSLayoutConstraint *heightConstraint;
-    for (NSLayoutConstraint *constraint in self.assignContainer.constraints) {
-        if (constraint.firstAttribute == NSLayoutAttributeHeight) {
-            heightConstraint = constraint;
-            break;
-        }
-    }
-    
-    heightConstraint.constant = height;
+- (void)taskPressed : (id) sender
+{
+    UIButton* taskLink = (UIButton*)sender;
+    long index = taskLink.tag;
+    //AssignTaskModel* model = [self.assignTaskItems objectAtIndex:index];
+    AssignTaskModel* model = nil;
+    [self taskPressedWithModel:model];
     
 }
+
+
+
+
 @end

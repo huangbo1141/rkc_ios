@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic-Bold.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4eb-fJ-GTJ">
+            <objects>
+                <viewController id="vqO-4T-8yC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JxO-a5-9dH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ax6-Xc-RTd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VUP-no-jr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SV-6D-hMH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84t-X2-dNK" customClass="BorderButton">
+                                        <rect key="frame" x="267" y="15" width="93" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="wOf-Du-PGB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="13"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="+  Add User">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.1019607843" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.043137254899999998" green="0.21176470589999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-79-5lM">
+                                        <rect key="frame" x="20" y="70" width="335" height="557"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sPW-79-5lM" secondAttribute="trailing" constant="20" id="JVS-l8-J6o"/>
+                                    <constraint firstItem="sPW-79-5lM" firstAttribute="top" secondItem="84t-X2-dNK" secondAttribute="bottom" constant="20" id="N2s-nE-Mx5"/>
+                                    <constraint firstAttribute="bottom" secondItem="sPW-79-5lM" secondAttribute="bottom" constant="20" id="ZKa-Lw-jgV"/>
+                                    <constraint firstItem="sPW-79-5lM" firstAttribute="leading" secondItem="5SV-6D-hMH" secondAttribute="leading" constant="20" id="hzY-g8-2Lu"/>
+                                    <constraint firstItem="84t-X2-dNK" firstAttribute="top" secondItem="5SV-6D-hMH" secondAttribute="top" constant="15" id="poB-pn-jmq"/>
+                                    <constraint firstAttribute="trailing" secondItem="84t-X2-dNK" secondAttribute="trailing" constant="15" id="yTJ-6x-MYU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dYc-92-PKe" firstAttribute="trailing" secondItem="5SV-6D-hMH" secondAttribute="trailing" id="3zH-XO-v2m"/>
+                            <constraint firstItem="5SV-6D-hMH" firstAttribute="top" secondItem="JxO-a5-9dH" secondAttribute="bottom" id="hpf-87-06v"/>
+                            <constraint firstItem="Ax6-Xc-RTd" firstAttribute="top" secondItem="5SV-6D-hMH" secondAttribute="bottom" id="i78-Db-8nL"/>
+                            <constraint firstItem="5SV-6D-hMH" firstAttribute="leading" secondItem="dYc-92-PKe" secondAttribute="leading" id="pP0-wc-QZN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dYc-92-PKe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3I-i7-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471" y="-897"/>
+        </scene>
+    </scenes>
+</document>

@@ -281,7 +281,19 @@
     [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCAssign"];
 }
 - (IBAction)profileAction:(id)sender {
-    [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCProfile"];
+    UIAlertController* alert = [[UIAlertController alloc] init];
+    UIAlertAction*ac1 = [UIAlertAction actionWithTitle:kLang(@"menu_profile") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [Global switchScreen:self withStoryboardName:@"Main" withControllerName:@"VCProfile"];
+    }];
+    UIAlertAction*ac2 = [UIAlertAction actionWithTitle:kLang(@"menu_switchuser") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [Global switchScreen:self withStoryboardName:@"Menu" withControllerName:@"VCMenuSwitchUser"];
+    }];
+    if([Global isIPad]){
+        alert.popoverPresentationController.sourceView = sender;
+    }
+    [alert addAction:ac1];
+    [alert addAction:ac2];
+    [self presentViewController:alert animated:true completion:nil];
 }
 
 @end

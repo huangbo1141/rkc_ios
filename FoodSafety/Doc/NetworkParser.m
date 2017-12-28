@@ -52,9 +52,6 @@
             }else {
                 completionBlock(nil, @"invalid");
             }
-            
-            
-   
 
         } else {
             if(completionBlock) {
@@ -65,16 +62,25 @@
     
 }
 
-- (void)serviceLogin:(NSString*)username withPassword:(NSString*)password withCompletionBlock:(NetworkCompletionBlock)completionBlock{
+- (void)serviceLogin:(NSString*)username withPassword:(NSString*)password withMode:(int)mode withCompletionBlock:(NetworkCompletionBlock)completionBlock{
     NSMutableArray *objects = [[NSMutableArray alloc] init];
     NSMutableArray *keys = [[NSMutableArray alloc] init];
-    [keys addObject:@"username"];
-    [objects addObject:username];
-    [keys addObject:@"password"];
-    [objects addObject:password];
-    NSMutableDictionary *params= [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
     NSString *url = sAppDomain;
-    url = [url stringByAppendingString:LOGIN];
+    
+    if (mode == 0) {
+        [keys addObject:@"username"];
+        [objects addObject:username];
+        [keys addObject:@"password"];
+        [objects addObject:password];
+        url = [url stringByAppendingString:LOGIN];
+    }else{
+        [keys addObject:@"digit_code"];
+        [objects addObject:username];
+        url = [url stringByAppendingString:LOGIN_DIGIT];
+    }
+    
+    NSMutableDictionary *params= [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
+    
     [[HttpUtils shared] makePurePostRequest:url withParams:params withCompletionBlock:^(id responseObject, NSString *error) {
         if(error == nil) {
             NSDictionary* response = (NSDictionary*) responseObject;
@@ -158,9 +164,10 @@
     url = [url stringByAppendingString:TODAY_TASK];
     [[HttpUtils shared] makeSignedPostRequest:url withParams:params withCompletionBlock:^(id responseObject, NSString *error) {
         if(error == nil) {
+            NSMutableDictionary* ret = [[NSMutableDictionary alloc] init];
             NSDictionary* dict = (NSDictionary*) responseObject;
             NSMutableArray* models = [[NSMutableArray alloc] init];
-            NSDictionary* data = [dict objectForKey:@"data"];
+            NSDictionary* data = dict;
             
             if([data objectForKey:@"fridges"] != nil) {
                 NSDictionary* values = [data objectForKey:@"fridges"];
@@ -169,8 +176,9 @@
                     [model parse:@"fridge" withDict:value];
                     [models addObject:model];
                 }
-                
             }
+            ret[@"fridges"] = models;
+            models = [[NSMutableArray alloc] init];
             
             if([data objectForKey:@"freezers"] != nil) {
                 NSDictionary* values = [data objectForKey:@"freezers"];
@@ -181,6 +189,8 @@
                 }
                 
             }
+            ret[@"freezers"] = models;
+            models = [[NSMutableArray alloc] init];
             
             if([data objectForKey:@"oils"] != nil) {
                 NSDictionary* values = [data objectForKey:@"oils"];
@@ -191,8 +201,11 @@
                 }
                 
             }
-            if([data objectForKey:@"cleans"] != nil) {
-                NSDictionary* values = [data objectForKey:@"cleans"];
+            ret[@"oils"] = models;
+            models = [[NSMutableArray alloc] init];
+            
+            if([data objectForKey:@"cleanings"] != nil) {
+                NSDictionary* values = [data objectForKey:@"cleanings"];
                 for(NSDictionary* value in values) {
                     AssignTaskModel* model = [[AssignTaskModel alloc] init];
                     [model parse:@"cleaning" withDict:value];
@@ -200,8 +213,11 @@
                 }
                 
             }
-            if([data objectForKey:@"expires"] != nil) {
-                NSDictionary* values = [data objectForKey:@"expires"];
+            ret[@"cleanings"] = models;
+            models = [[NSMutableArray alloc] init];
+            
+            if([data objectForKey:@"customs"] != nil) {
+                NSDictionary* values = [data objectForKey:@"customs"];
                 for(NSDictionary* value in values) {
                     AssignTaskModel* model = [[AssignTaskModel alloc] init];
                     [model parse:@"expire" withDict:value];
@@ -209,9 +225,12 @@
                 }
                 
             }
+            ret[@"expire"] = models;
+            models = [[NSMutableArray alloc] init];
+            
             
             if(completionBlock) {
-                    completionBlock(models, nil);
+                    completionBlock(ret, nil);
                 }
         }else {
             if(completionBlock) {

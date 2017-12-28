@@ -17,6 +17,7 @@ extern  NSString * SERVER_URL;
 extern  NSString * CONTROL_DOMAIN_URL;
 extern  NSString * CHECK_APP_DOMAIN;
 extern  NSString * LOGIN;
+extern  NSString * LOGIN_DIGIT;
 extern  NSString * FORGOT_PASSWORD;
 extern  NSString * TODAY_TASK;
 extern  NSString * GET_PROFILE;
@@ -27,6 +28,7 @@ extern  NSString * UPDATE_APNSTOKEN;
 extern  NSString * GET_FRIDGE_INFO;
 extern  NSString * CAPTURE_FRIDGE;
 extern  NSString * DELETE_FRIDGE;
+extern  NSString * CHECKLIST_CHECK;
 
 
 extern  NSString * GET_FREEZE_INFO;
@@ -114,6 +116,10 @@ extern  NSString * sAppDomain;
 +(void)stopIndicator:(UIViewController*)viewcon;
 +(void)switchStoryboard:(UIViewController*)viewcon withStoryboardName: (NSString*)storyboardName;
 +(void)switchScreen:(UIViewController*)viewcon withStoryboardName: (NSString*) storyboardName withControllerName: (NSString*)controllerName;
++(void)switchScreen:(UIViewController*)viewcon
+ withStoryboardName: (NSString*) storyboardName
+ withControllerName: (NSString*)controllerName
+        withOptions:(NSDictionary*)options;
 +(NSInteger)getAge:(NSDate*)birthday;
 +(NSString*) getUserFriendlyTime:(long) timeInMiliseconds withTodayString:(NSString*) today withTomorrowString:(NSString*) tomorrow;
 +(void)AlertMessage:(UIViewController*)viewController Message:(NSString*)message Title:(NSString*)title;

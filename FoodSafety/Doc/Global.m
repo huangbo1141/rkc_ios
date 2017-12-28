@@ -24,8 +24,9 @@ NSString * CONTROL_DOMAIN_URL = @"https://management.the-haccp-app.com/service/c
 NSString * SHARE_URL = @"";
 NSString * CHECK_APP_DOMAIN = @"service/valid_domain";
 NSString * LOGIN = @"authenticate/login";
+NSString * LOGIN_DIGIT = @"authenticate/digit_login";
 NSString * FORGOT_PASSWORD = @"authenticate/forgot_password";
-NSString * TODAY_TASK= @"assigns/get_info";
+NSString * TODAY_TASK= @"checklist/get_tasks";
 NSString * GET_PROFILE = @"profile/get_info";
 NSString * SAVE_PROFILE = @"profile/save_info";
 NSString * UPDATE_APNSTOKEN = @"profile/update_notification_token";
@@ -35,6 +36,7 @@ NSString * GET_FRIDGE_INFO = @"fridge/get_fridge_info";
 NSString * CAPTURE_FRIDGE = @"fridge/capture";
 NSString * DELETE_FRIDGE =  @"fridge/delete";
 
+NSString * CHECKLIST_CHECK =  @"checklist/task_check";
 
 NSString * GET_FREEZE_INFO = @"freezer/get_freezer_info";
 NSString * CAPTURE_FREEZE = @"freezer/capture";
@@ -190,6 +192,24 @@ NSString * sAppDomain;
     }
     UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
     UIViewController* vc = [mainStoryboard instantiateViewControllerWithIdentifier:controllerName];
+    [viewcon.navigationController pushViewController:vc animated:YES];
+}
++(void)switchScreen:(UIViewController*)viewcon
+        withStoryboardName: (NSString*) storyboardName
+        withControllerName: (NSString*)controllerName
+        withOptions:(NSDictionary*)options{
+    NSString*  sbName = storyboardName;
+    if([Global isIPad] && [storyboardName isEqualToString:@"Main"]) {
+        sbName = @"MainiPad";
+    }
+    UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
+    UIViewController* vc = [mainStoryboard instantiateViewControllerWithIdentifier:controllerName];
+    if ([options isKindOfClass:[NSDictionary class]]) {
+        if ([options[@"reset"] isEqualToString:@"1"]) {
+            [viewcon.navigationController setViewControllers:@[vc]];
+        }
+    }
+    
     [viewcon.navigationController pushViewController:vc animated:YES];
 }
 

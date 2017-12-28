@@ -11,6 +11,7 @@
 #import "MyRelativeLayout.h"
 
 @interface VCAssign : UIViewController
-@property (weak, nonatomic) IBOutlet MyLinearLayout *assignContainer;
-@property (strong, nonatomic) NSMutableArray* assignTaskItems;
+//@property (weak, nonatomic) IBOutlet MyLinearLayout *assignContainer;
+@property (weak, nonatomic) IBOutlet UIStackView *stackView;
+@property (strong, nonatomic) NSMutableDictionary* map_data;
 @end

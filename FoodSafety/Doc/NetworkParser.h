@@ -21,7 +21,7 @@ typedef void (^NetworkCompletionBlock)(id responseObject, NSString* error);
 + (instancetype)shared;
 
 - (void)serviceCheckSubdomain:(NSString*)subdomain withCompletionBlock:(NetworkCompletionBlock)completionBlock;
-- (void)serviceLogin:(NSString*)username withPassword:(NSString*)password withCompletionBlock:(NetworkCompletionBlock)completionBlock;
+- (void)serviceLogin:(NSString*)username withPassword:(NSString*)password withMode:(int)mode withCompletionBlock:(NetworkCompletionBlock)completionBlock;
 - (void)serviceForgotPassword:(NSString*)email withCompletionBlock:(NetworkCompletionBlock)completionBlock;
 - (void)serviceTodayTask:(NetworkCompletionBlock)completionBlock;
 - (void)serviceGetProfile:(NSString*) token withCompletionBlock:(NetworkCompletionBlock)completionBlock;

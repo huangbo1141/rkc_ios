@@ -124,7 +124,6 @@
 		4D4D96001F719329002C2E14 /* TVCellOilItemSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4D96021F719329002C2E14 /* TVCellOilItemSearch.xib */; };
 		4D5684611F4346CC0094DD11 /* RoundEdgeBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5684601F4346CC0094DD11 /* RoundEdgeBorderView.m */; };
 		4D5684641F4351D60094DD11 /* AssignCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5684631F4351D60094DD11 /* AssignCell.xib */; };
-		4D56846A1F4359A70094DD11 /* VCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5684691F4359A70094DD11 /* VCLogin.m */; };
 		4D56846D1F4359C40094DD11 /* VCConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D56846C1F4359C40094DD11 /* VCConnect.m */; };
 		4D5684731F435EFD0094DD11 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5684721F435EFD0094DD11 /* Language.m */; };
 		4D56847A1F43612D0094DD11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D56847C1F43612D0094DD11 /* Localizable.strings */; };
@@ -190,6 +189,16 @@
 		4DF919811F458F8900087318 /* TVCellFridgeLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9197F1F458F8900087318 /* TVCellFridgeLog.m */; };
 		4DF919821F458F8900087318 /* TVCellFridgeLog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF919801F458F8900087318 /* TVCellFridgeLog.xib */; };
 		D83507F6BC260BA6C5AD18D9 /* libPods-FoodSafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AAE7A483B24B2D83AEFCD2 /* libPods-FoodSafety.a */; };
+		E28794531FF4F40C00D5BF51 /* AssignViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28794551FF4F40C00D5BF51 /* AssignViews.xib */; };
+		E28794591FF4FDC500D5BF51 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28794581FF4FDC500D5BF51 /* Home.storyboard */; };
+		E287945C1FF4FEFE00D5BF51 /* VCMenuSwitchUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E287945B1FF4FEFE00D5BF51 /* VCMenuSwitchUser.m */; };
+		E28794651FF5060000D5BF51 /* VCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E28794641FF5060000D5BF51 /* VCLogin.m */; };
+		E28794681FF5061600D5BF51 /* VCMenuAddUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E28794661FF5061600D5BF51 /* VCMenuAddUser.m */; };
+		E28E73D71FF5462A00B8B80B /* MenuSwitchUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E73D51FF5462A00B8B80B /* MenuSwitchUserCell.m */; };
+		E28E73D81FF5462A00B8B80B /* MenuSwitchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28E73D61FF5462A00B8B80B /* MenuSwitchUserCell.xib */; };
+		E2B123731FF4D2F0008F40D1 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123721FF4D2F0008F40D1 /* CircleButton.m */; };
+		E2B123761FF4D47A008F40D1 /* MyAccordionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123751FF4D47A008F40D1 /* MyAccordionView.m */; };
+		E2B123791FF4D488008F40D1 /* MyAccordionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123781FF4D488008F40D1 /* MyAccordionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -370,7 +379,7 @@
 		4D4C94421F4F40DC00A5A8BB /* VCReheatingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCReheatingList.m; path = Reheating/VCReheatingList.m; sourceTree = "<group>"; };
 		4D4C94441F4F48F700A5A8BB /* VCItemScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCItemScan.h; path = Item/VCItemScan.h; sourceTree = "<group>"; };
 		4D4C94451F4F48F700A5A8BB /* VCItemScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCItemScan.m; path = Item/VCItemScan.m; sourceTree = "<group>"; };
-		4D4D95241F3EFF0000278593 /* 		.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "\t\t.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4D95241F3EFF0000278593 /* FoodSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4D95281F3EFF0000278593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D4D952A1F3EFF0000278593 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D4D952B1F3EFF0000278593 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -434,8 +443,6 @@
 		4D56845F1F4346CC0094DD11 /* RoundEdgeBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundEdgeBorderView.h; sourceTree = "<group>"; };
 		4D5684601F4346CC0094DD11 /* RoundEdgeBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundEdgeBorderView.m; sourceTree = "<group>"; };
 		4D5684631F4351D60094DD11 /* AssignCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssignCell.xib; sourceTree = "<group>"; };
-		4D5684681F4359A70094DD11 /* VCLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCLogin.h; path = Modules/Main/VCLogin.h; sourceTree = "<group>"; };
-		4D5684691F4359A70094DD11 /* VCLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCLogin.m; path = Modules/Main/VCLogin.m; sourceTree = "<group>"; };
 		4D56846B1F4359C40094DD11 /* VCConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCConnect.h; path = Modules/Main/VCConnect.h; sourceTree = "<group>"; };
 		4D56846C1F4359C40094DD11 /* VCConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCConnect.m; path = Modules/Main/VCConnect.m; sourceTree = "<group>"; };
 		4D5684711F435EFD0094DD11 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = Lib/Language.h; sourceTree = "<group>"; };
@@ -561,6 +568,24 @@
 		60A877700C52B37024EB3CEC /* Pods-FoodSafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSafety.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSafety/Pods-FoodSafety.release.xcconfig"; sourceTree = "<group>"; };
 		64AAE7A483B24B2D83AEFCD2 /* libPods-FoodSafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodSafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E7DDF2A9AA394E03800107 /* Pods-FoodSafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSafety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSafety/Pods-FoodSafety.debug.xcconfig"; sourceTree = "<group>"; };
+		E28794541FF4F40C00D5BF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AssignViews.xib; sourceTree = "<group>"; };
+		E28794571FF4F41300D5BF51 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/AssignViews.strings; sourceTree = "<group>"; };
+		E28794581FF4FDC500D5BF51 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E287945A1FF4FEFE00D5BF51 /* VCMenuSwitchUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCMenuSwitchUser.h; sourceTree = "<group>"; };
+		E287945B1FF4FEFE00D5BF51 /* VCMenuSwitchUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCMenuSwitchUser.m; sourceTree = "<group>"; };
+		E28794631FF505FF00D5BF51 /* VCLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCLogin.h; path = Modules/Main/VCLogin.h; sourceTree = "<group>"; };
+		E28794641FF5060000D5BF51 /* VCLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCLogin.m; path = Modules/Main/VCLogin.m; sourceTree = "<group>"; };
+		E28794661FF5061600D5BF51 /* VCMenuAddUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCMenuAddUser.m; path = Menu/VCMenuAddUser.m; sourceTree = "<group>"; };
+		E28794671FF5061600D5BF51 /* VCMenuAddUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCMenuAddUser.h; path = Menu/VCMenuAddUser.h; sourceTree = "<group>"; };
+		E28E73D41FF5462A00B8B80B /* MenuSwitchUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuSwitchUserCell.h; sourceTree = "<group>"; };
+		E28E73D51FF5462A00B8B80B /* MenuSwitchUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuSwitchUserCell.m; sourceTree = "<group>"; };
+		E28E73D61FF5462A00B8B80B /* MenuSwitchUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuSwitchUserCell.xib; sourceTree = "<group>"; };
+		E2B123711FF4D2F0008F40D1 /* CircleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
+		E2B123721FF4D2F0008F40D1 /* CircleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
+		E2B123741FF4D47A008F40D1 /* MyAccordionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccordionView.h; sourceTree = "<group>"; };
+		E2B123751FF4D47A008F40D1 /* MyAccordionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccordionView.m; sourceTree = "<group>"; };
+		E2B123771FF4D488008F40D1 /* MyAccordionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccordionCell.h; sourceTree = "<group>"; };
+		E2B123781FF4D488008F40D1 /* MyAccordionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccordionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -614,12 +639,12 @@
 		4D05CD891F42EE1000012F95 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E28794631FF505FF00D5BF51 /* VCLogin.h */,
+				E28794641FF5060000D5BF51 /* VCLogin.m */,
 				4D05CD8A1F42EE5500012F95 /* VCSpash.h */,
 				4D05CD8B1F42EE5500012F95 /* VCSpash.m */,
 				4D05CD8D1F42EF8600012F95 /* VCAssign.h */,
 				4D05CD8E1F42EF8600012F95 /* VCAssign.m */,
-				4D5684681F4359A70094DD11 /* VCLogin.h */,
-				4D5684691F4359A70094DD11 /* VCLogin.m */,
 				4D56846B1F4359C40094DD11 /* VCConnect.h */,
 				4D56846C1F4359C40094DD11 /* VCConnect.m */,
 				4D5684801F43681E0094DD11 /* VCForgotPassword.h */,
@@ -698,7 +723,7 @@
 		4D4D95251F3EFF0000278593 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D4D95241F3EFF0000278593 /* 		.app */,
+				4D4D95241F3EFF0000278593 /* FoodSafety.app */,
 				4D4D953D1F3EFF0000278593 /* FoodSafetyTests.xctest */,
 				4D4D95481F3EFF0000278593 /* FoodSafetyUITests.xctest */,
 			);
@@ -717,9 +742,11 @@
 				4D4D955A1F3F034200278593 /* Doc */,
 				4D4D95641F3F034200278593 /* Modules */,
 				4D4D95651F3F034200278593 /* View */,
+				E29BA8441FF4AE4200AB3930 /* ViewXib */,
 				4D4D952A1F3EFF0000278593 /* AppDelegate.h */,
 				4D4D952B1F3EFF0000278593 /* AppDelegate.mm */,
 				4D4D95301F3EFF0000278593 /* Main.storyboard */,
+				E28794581FF4FDC500D5BF51 /* Home.storyboard */,
 				4D4D95331F3EFF0000278593 /* Assets.xcassets */,
 				4D4D95351F3EFF0000278593 /* LaunchScreen.storyboard */,
 				4D4D95381F3EFF0000278593 /* Info.plist */,
@@ -816,6 +843,8 @@
 				4D8C41011F4C675D00BEC1B6 /* BorderTextView.m */,
 				4D8766F21F6B84EA0060D9DC /* MyImageView.h */,
 				4D8766F31F6B84EA0060D9DC /* MyImageView.m */,
+				E2B123711FF4D2F0008F40D1 /* CircleButton.h */,
+				E2B123721FF4D2F0008F40D1 /* CircleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -874,6 +903,9 @@
 				4D8CDB461F700B61003C437F /* TVCellOilItemSearch.h */,
 				4D8CDB471F700B61003C437F /* TVCellOilItemSearch.m */,
 				4D4D96021F719329002C2E14 /* TVCellOilItemSearch.xib */,
+				E28E73D41FF5462A00B8B80B /* MenuSwitchUserCell.h */,
+				E28E73D51FF5462A00B8B80B /* MenuSwitchUserCell.m */,
+				E28E73D61FF5462A00B8B80B /* MenuSwitchUserCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -1022,6 +1054,10 @@
 				4DEF51421F544D250027F44D /* VCMenuDetailLabel.m */,
 				4D8766F51F6BB79C0060D9DC /* VCLabelFilter.h */,
 				4D8766F61F6BB79C0060D9DC /* VCLabelFilter.m */,
+				E287945A1FF4FEFE00D5BF51 /* VCMenuSwitchUser.h */,
+				E287945B1FF4FEFE00D5BF51 /* VCMenuSwitchUser.m */,
+				E28794671FF5061600D5BF51 /* VCMenuAddUser.h */,
+				E28794661FF5061600D5BF51 /* VCMenuAddUser.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -1195,6 +1231,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E29BA8441FF4AE4200AB3930 /* ViewXib */ = {
+			isa = PBXGroup;
+			children = (
+				E28794551FF4F40C00D5BF51 /* AssignViews.xib */,
+				E2B123741FF4D47A008F40D1 /* MyAccordionView.h */,
+				E2B123751FF4D47A008F40D1 /* MyAccordionView.m */,
+				E2B123771FF4D488008F40D1 /* MyAccordionCell.h */,
+				E2B123781FF4D488008F40D1 /* MyAccordionCell.m */,
+			);
+			path = ViewXib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1216,7 +1264,7 @@
 			);
 			name = FoodSafety;
 			productName = FoodSafety;
-			productReference = 4D4D95241F3EFF0000278593 /* 		.app */;
+			productReference = 4D4D95241F3EFF0000278593 /* FoodSafety.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4D4D953C1F3EFF0000278593 /* FoodSafetyTests */ = {
@@ -1267,7 +1315,7 @@
 					4D4D95231F3EFF0000278593 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PABAF765WK;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1317,6 +1365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28794531FF4F40C00D5BF51 /* AssignViews.xib in Resources */,
 				4D7D35011F5A64E600280799 /* TVCellItem.xib in Resources */,
 				4D4D95371F3EFF0000278593 /* LaunchScreen.storyboard in Resources */,
 				4D062A071F460727001AF9A7 /* MainiPad.storyboard in Resources */,
@@ -1339,7 +1388,9 @@
 				4D2849EA1F4ECCAE0056E033 /* TVCellItemLog.xib in Resources */,
 				4DEF51571F546EE80027F44D /* TVCellMenuItem.xib in Resources */,
 				4D56847A1F43612D0094DD11 /* Localizable.strings in Resources */,
+				E28794591FF4FDC500D5BF51 /* Home.storyboard in Resources */,
 				4D4D95DA1F719224002C2E14 /* Transport.storyboard in Resources */,
+				E28E73D81FF5462A00B8B80B /* MenuSwitchUserCell.xib in Resources */,
 				4D7849841F5CFBEB00C6A63F /* TVCellCleaningAssign.xib in Resources */,
 				4D4D96001F719329002C2E14 /* TVCellOilItemSearch.xib in Resources */,
 				4D5684641F4351D60094DD11 /* AssignCell.xib in Resources */,
@@ -1461,6 +1512,7 @@
 				4DB868B81F41476700FC0C84 /* HttpUtils.m in Sources */,
 				4D4978751F5DA69D00AC11B3 /* VCSafetyList.m in Sources */,
 				4D8C41081F4C6DAF00BEC1B6 /* VCFridgeInfo.m in Sources */,
+				E28E73D71FF5462A00B8B80B /* MenuSwitchUserCell.m in Sources */,
 				4D4C94461F4F48F700A5A8BB /* VCItemScan.m in Sources */,
 				4D7D35001F5A64E600280799 /* TVCellItem.m in Sources */,
 				4D5684611F4346CC0094DD11 /* RoundEdgeBorderView.m in Sources */,
@@ -1474,6 +1526,7 @@
 				4D1DB0381F419F2E007F9158 /* MenuModel.m in Sources */,
 				4D1DB02F1F419CCD007F9158 /* OperatorModel.m in Sources */,
 				4D8C41051F4C6D9500BEC1B6 /* VCFridgeCapture.m in Sources */,
+				E287945C1FF4FEFE00D5BF51 /* VCMenuSwitchUser.m in Sources */,
 				4D4C943D1F4F0C3E00A5A8BB /* VCMultiSelect.m in Sources */,
 				4D49787C1F5DA97200AC11B3 /* TVCellLaboratory.m in Sources */,
 				4DB868C81F415C5400FC0C84 /* AssignModel.m in Sources */,
@@ -1507,7 +1560,9 @@
 				4DEF51341F544B110027F44D /* VCMenuLabelAddList.m in Sources */,
 				4D0629FC1F45F57A001AF9A7 /* QRCameraSwitchButton.m in Sources */,
 				4D4978651F5D9C3600AC11B3 /* VCNotificationList.m in Sources */,
+				E2B123761FF4D47A008F40D1 /* MyAccordionView.m in Sources */,
 				4D4978711F5D9CF200AC11B3 /* TVCellNotification.m in Sources */,
+				E28794681FF5061600D5BF51 /* VCMenuAddUser.m in Sources */,
 				4D7D35141F5AA29500280799 /* TVCellOilLog.m in Sources */,
 				4D07236F1F41D7DC008225DB /* DeliveryMenuModel.m in Sources */,
 				4D2849ED1F4EE1D30056E033 /* AllergenModel.m in Sources */,
@@ -1518,7 +1573,6 @@
 				4D4C94391F4F0B2A00A5A8BB /* TVCellMultiSelect.m in Sources */,
 				4DEECED31F4DC2BF00ECDA61 /* VCItemEdit.m in Sources */,
 				4DDC368B1F5125D7003CCBD8 /* VCDeliveryLabelDetailView.m in Sources */,
-				4D56846A1F4359A70094DD11 /* VCLogin.m in Sources */,
 				4D3DD4AA1F4FCC26009F8516 /* VCTransportList.m in Sources */,
 				4D1DB0321F419D2E007F9158 /* NotificationModel.m in Sources */,
 				4D4B76021F5EDDC70094AA51 /* VCPrint.m in Sources */,
@@ -1533,6 +1587,7 @@
 				4D7D35071F5A9FE700280799 /* VCOilItemAreaScan.m in Sources */,
 				4D5684731F435EFD0094DD11 /* Language.m in Sources */,
 				4D3DD4C71F5010C0009F8516 /* VCTransportDetail.m in Sources */,
+				E28794651FF5060000D5BF51 /* VCLogin.m in Sources */,
 				4D0723751F41EF1A008225DB /* MenuInfoModel.m in Sources */,
 				4D8766F41F6B84EA0060D9DC /* MyImageView.m in Sources */,
 				4DF919811F458F8900087318 /* TVCellFridgeLog.m in Sources */,
@@ -1542,6 +1597,7 @@
 				4DB868BC1F41489F00FC0C84 /* UserModel.m in Sources */,
 				4D4D95751F3F034200278593 /* CircleBorderImageView.m in Sources */,
 				4D7D35041F5A9FBB00280799 /* VCOilList.m in Sources */,
+				E2B123731FF4D2F0008F40D1 /* CircleButton.m in Sources */,
 				4D78497C1F5CFAF000C6A63F /* VCCleaningInfo.m in Sources */,
 				4D07237B1F41F0B4008225DB /* LaboratoryInfoModel.m in Sources */,
 				4D78497F1F5CFB0400C6A63F /* VCCleaningCapture.m in Sources */,
@@ -1564,6 +1620,7 @@
 				4D15BA941F505B9300EDFEC3 /* VCDeliveryInfo.m in Sources */,
 				4DEF51431F544D250027F44D /* VCMenuDetailLabel.m in Sources */,
 				4D1DB04A1F41A7B8007F9158 /* AssignTaskModel.m in Sources */,
+				E2B123791FF4D488008F40D1 /* MyAccordionCell.m in Sources */,
 				4D56846D1F4359C40094DD11 /* VCConnect.m in Sources */,
 				4D1DB0231F4197FF007F9158 /* DeliveryModel.m in Sources */,
 				4D1DB03B1F419FC2007F9158 /* NotificationInfoModel.m in Sources */,
@@ -1809,6 +1866,15 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		E28794551FF4F40C00D5BF51 /* AssignViews.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28794541FF4F40C00D5BF51 /* Base */,
+				E28794571FF4F41300D5BF51 /* fr */,
+			);
+			name = AssignViews.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1910,13 +1976,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FoodSafety/FoodSafety.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: UN CHEF A DOMICILE (PABAF765WK)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UN CHEF A DOMICILE (PABAF765WK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cedric Seguela (MFCHE4M45Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PABAF765WK;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FoodSafety/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1925,8 +1992,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgom.haccpfoodsafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3db0b4b-dd30-406f-b1b4-a63c0a1ac419";
-				PROVISIONING_PROFILE_SPECIFIER = Foodsafety;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1937,13 +2004,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FoodSafety/FoodSafety.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: UN CHEF A DOMICILE (PABAF765WK)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UN CHEF A DOMICILE (PABAF765WK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cedric Seguela (MFCHE4M45Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PABAF765WK;
 				ENABLE_BITCODE = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FoodSafety/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1951,8 +2019,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgom.haccpfoodsafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3db0b4b-dd30-406f-b1b4-a63c0a1ac419";
-				PROVISIONING_PROFILE_SPECIFIER = Foodsafety;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -69,3 +69,22 @@
 "create_link"="https://the-haccp-app.com/haccp-plan-pricing/";
 "create_account"="Try for free";
 
+"login_by_code"="Login By Code";
+"login_by_username"="Login By Username";
+"input_code"="Please enter code.";
+"invalid_code"="Invalid code.";
+
+"assign_header_fridge"="Tasks for Fridge";
+"assign_header_freezer"="Tasks for Freezers";
+"assign_header_oil"="Tasks for Oils";
+"assign_header_cleaning"="Tasks for Cleanings";
+"assign_header_customtask"="Custom Tasks";
+
+"menu_profile"="Profile";
+"menu_switchuser"="Switch User";
+"username"="Username";
+"usercode"="Usercode";
+
+"yes"="YES";
+"no"="NO";
+
