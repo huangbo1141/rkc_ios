@@ -80,6 +80,7 @@ NSString * DELETE_OIL = @"oil/delete";
 
 NSString * GET_ITEM_INFO = @"item/get_item_info";
 NSString * GET_ITEMS = @"item/get_items";
+NSString * PREVIEW_ITEM = @"item/get_item_preview";
 NSString * GET_ITEM = @"item/get_item";
 NSString * UPDATE_ITEM = @"item/update";
 NSString * CREATE_ITEM = @"item/capture";
@@ -175,24 +176,36 @@ NSString * sAppDomain;
 }
 
 +(void)switchStoryboard:(UIViewController*)viewcon withStoryboardName: (NSString*)storyboardName{
-    NSString*  sbName = storyboardName;
-    if([Global isIPad] && [storyboardName isEqualToString:@"Main"]) {
-         sbName = @"MainiPad";
-    }
-    UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
-    UIViewController* vc = [mainStoryboard instantiateInitialViewController];
-    [viewcon.navigationController pushViewController:vc animated:YES];
+    
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString*  sbName = storyboardName;
+        if([Global isIPad] && [storyboardName isEqualToString:@"Main"]) {
+            sbName = @"MainiPad";
+        }
+        UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
+        UIViewController* vc = [mainStoryboard instantiateInitialViewController];
+        
+        [viewcon.navigationController pushViewController:vc animated:YES];
+    });
 }
 
 +(void)switchScreen:(UIViewController*)viewcon withStoryboardName: (NSString*) storyboardName
  withControllerName: (NSString*)controllerName{
-    NSString*  sbName = storyboardName;
-    if([Global isIPad] && [storyboardName isEqualToString:@"Main"]) {
-        sbName = @"MainiPad";
-    }
-    UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
-    UIViewController* vc = [mainStoryboard instantiateViewControllerWithIdentifier:controllerName];
-    [viewcon.navigationController pushViewController:vc animated:YES];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString*  sbName = storyboardName;
+        if([Global isIPad] && [storyboardName isEqualToString:@"Main"]) {
+            sbName = @"MainiPad";
+        }
+        UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName: sbName bundle:nil];
+        UIViewController* vc = [mainStoryboard instantiateViewControllerWithIdentifier:controllerName];
+        [viewcon.navigationController pushViewController:vc animated:YES];
+    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//    });
+    
 }
 +(void)switchScreen:(UIViewController*)viewcon
         withStoryboardName: (NSString*) storyboardName
@@ -206,11 +219,16 @@ NSString * sAppDomain;
     UIViewController* vc = [mainStoryboard instantiateViewControllerWithIdentifier:controllerName];
     if ([options isKindOfClass:[NSDictionary class]]) {
         if ([options[@"reset"] isEqualToString:@"1"]) {
-            [viewcon.navigationController setViewControllers:@[vc]];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [viewcon.navigationController setViewControllers:@[vc]];
+            });
         }
     }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [viewcon.navigationController pushViewController:vc animated:YES];
+    });
     
-    [viewcon.navigationController pushViewController:vc animated:YES];
 }
 
 +(NSInteger)getAge:(NSDate*)birthday{

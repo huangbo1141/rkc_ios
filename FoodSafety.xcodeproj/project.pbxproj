@@ -196,6 +196,8 @@
 		E28794681FF5061600D5BF51 /* VCMenuAddUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E28794661FF5061600D5BF51 /* VCMenuAddUser.m */; };
 		E28E73D71FF5462A00B8B80B /* MenuSwitchUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E73D51FF5462A00B8B80B /* MenuSwitchUserCell.m */; };
 		E28E73D81FF5462A00B8B80B /* MenuSwitchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28E73D61FF5462A00B8B80B /* MenuSwitchUserCell.xib */; };
+		E29713981FF792FF00014A55 /* AutocompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E29713961FF792FF00014A55 /* AutocompleteCell.m */; };
+		E29713991FF792FF00014A55 /* AutocompleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29713971FF792FF00014A55 /* AutocompleteCell.xib */; };
 		E2B123731FF4D2F0008F40D1 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123721FF4D2F0008F40D1 /* CircleButton.m */; };
 		E2B123761FF4D47A008F40D1 /* MyAccordionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123751FF4D47A008F40D1 /* MyAccordionView.m */; };
 		E2B123791FF4D488008F40D1 /* MyAccordionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B123781FF4D488008F40D1 /* MyAccordionCell.m */; };
@@ -580,6 +582,9 @@
 		E28E73D41FF5462A00B8B80B /* MenuSwitchUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuSwitchUserCell.h; sourceTree = "<group>"; };
 		E28E73D51FF5462A00B8B80B /* MenuSwitchUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuSwitchUserCell.m; sourceTree = "<group>"; };
 		E28E73D61FF5462A00B8B80B /* MenuSwitchUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuSwitchUserCell.xib; sourceTree = "<group>"; };
+		E29713951FF792FF00014A55 /* AutocompleteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutocompleteCell.h; sourceTree = "<group>"; };
+		E29713961FF792FF00014A55 /* AutocompleteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutocompleteCell.m; sourceTree = "<group>"; };
+		E29713971FF792FF00014A55 /* AutocompleteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutocompleteCell.xib; sourceTree = "<group>"; };
 		E2B123711FF4D2F0008F40D1 /* CircleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
 		E2B123721FF4D2F0008F40D1 /* CircleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
 		E2B123741FF4D47A008F40D1 /* MyAccordionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccordionView.h; sourceTree = "<group>"; };
@@ -855,6 +860,9 @@
 				4D5684631F4351D60094DD11 /* AssignCell.xib */,
 				4D1144621F44315D00914E97 /* CVCellMenu.h */,
 				4D1144631F44315D00914E97 /* CVCellMenu.m */,
+				E29713951FF792FF00014A55 /* AutocompleteCell.h */,
+				E29713961FF792FF00014A55 /* AutocompleteCell.m */,
+				E29713971FF792FF00014A55 /* AutocompleteCell.xib */,
 				4DF9197E1F458F8900087318 /* TVCellFridgeLog.h */,
 				4DF9197F1F458F8900087318 /* TVCellFridgeLog.m */,
 				4DF919801F458F8900087318 /* TVCellFridgeLog.xib */,
@@ -1408,6 +1416,7 @@
 				4DF919821F458F8900087318 /* TVCellFridgeLog.xib in Resources */,
 				4D05CD881F42ED8300012F95 /* Resources.xcassets in Resources */,
 				4D05CD961F42F16000012F95 /* CenturyGothic-Regular.TTF in Resources */,
+				E29713991FF792FF00014A55 /* AutocompleteCell.xib in Resources */,
 				4D2849DE1F4EC2990056E033 /* Safety.storyboard in Resources */,
 				4D4D95EC1F719296002C2E14 /* Cleaning.storyboard in Resources */,
 			);
@@ -1563,6 +1572,7 @@
 				E2B123761FF4D47A008F40D1 /* MyAccordionView.m in Sources */,
 				4D4978711F5D9CF200AC11B3 /* TVCellNotification.m in Sources */,
 				E28794681FF5061600D5BF51 /* VCMenuAddUser.m in Sources */,
+				E29713981FF792FF00014A55 /* AutocompleteCell.m in Sources */,
 				4D7D35141F5AA29500280799 /* TVCellOilLog.m in Sources */,
 				4D07236F1F41D7DC008225DB /* DeliveryMenuModel.m in Sources */,
 				4D2849ED1F4EE1D30056E033 /* AllergenModel.m in Sources */,

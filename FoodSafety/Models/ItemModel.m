@@ -57,6 +57,16 @@
 -(void) parse:(NSDictionary*) dict {
     if([dict objectForKey:@"id"] != nil) self.mId = [dict objectForKey:@"id"];
     
+    if(dict[@"diff"] != nil) {
+        if ([dict[@"diff"] isKindOfClass:[NSString class]]) {
+            self.mDiff  = [dict objectForKey:@"diff"];
+        }else if([dict[@"diff"] isKindOfClass:[NSNumber class]]) {
+            NSNumber* num = dict[@"diff"];
+            self.mDiff  = [NSString stringWithFormat:@"%d", [num intValue]] ;
+        }
+        
+    }
+    
     if([dict objectForKey:@"name"] != nil) self.mName = [dict objectForKey:@"name"];
     if([self.mName isKindOfClass:[NSNull class]])
         self.mName = nil;
@@ -84,6 +94,7 @@
             self.mAllergens = [[Global jsonToDict:allergenStr] mutableCopy];
         }
     }
+    
     
 }
 

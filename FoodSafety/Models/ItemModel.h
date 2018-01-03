@@ -24,7 +24,7 @@
 @property (nonatomic, strong) NSString* mAreaName;
 @property (nonatomic, assign) int sortType;
 @property (nonatomic, assign) BOOL isChecked;
-
+@property (nonatomic, strong) NSString* mDiff;
 
 -(NSString*) getExpireDate;
 -(NSString*) getMysqlExpireDate;

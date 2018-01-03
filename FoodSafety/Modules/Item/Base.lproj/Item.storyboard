@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bhu-hu-7So">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bhu-hu-7So">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +52,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-Wd-TOH">
-                                                <rect key="frame" x="169.5" y="15" width="37" height="21"/>
+                                                <rect key="frame" x="169" y="15" width="37" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -614,13 +614,18 @@
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="13"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1qu-PU-1K8">
+                                        <rect key="frame" x="317" y="15" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0KD-bB-HlR"/>
                                     <constraint firstAttribute="trailing" secondItem="AIq-51-NMu" secondAttribute="trailing" id="Lmz-oM-nas"/>
                                     <constraint firstItem="AIq-51-NMu" firstAttribute="leading" secondItem="eGe-ut-7BE" secondAttribute="trailing" constant="8" id="MEw-by-jz5"/>
+                                    <constraint firstItem="1qu-PU-1K8" firstAttribute="trailing" secondItem="AIq-51-NMu" secondAttribute="trailing" constant="-8" id="Qpz-RO-KTS"/>
                                     <constraint firstItem="AIq-51-NMu" firstAttribute="centerY" secondItem="CMT-mI-2D9" secondAttribute="centerY" id="ZwC-8f-q15"/>
+                                    <constraint firstItem="1qu-PU-1K8" firstAttribute="centerY" secondItem="AIq-51-NMu" secondAttribute="centerY" id="ap0-Qp-rWm"/>
                                     <constraint firstItem="eGe-ut-7BE" firstAttribute="centerY" secondItem="CMT-mI-2D9" secondAttribute="centerY" id="bfi-Cu-Wcv"/>
                                     <constraint firstItem="eGe-ut-7BE" firstAttribute="leading" secondItem="CMT-mI-2D9" secondAttribute="leading" id="dR3-79-6kg"/>
                                 </constraints>
@@ -629,7 +634,7 @@
                                 <rect key="frame" x="15" y="150" width="345" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Number" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ych-kk-t5h">
-                                        <rect key="frame" x="0.0" y="9" width="80" height="32"/>
+                                        <rect key="frame" x="0.0" y="9.5" width="80" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="EsJ-iu-GmH"/>
                                         </constraints>
@@ -657,7 +662,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IS-ea-aU0">
                                 <rect key="frame" x="15" y="300" width="345" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire Date" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzx-5p-P2h">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire After" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzx-5p-P2h">
                                         <rect key="frame" x="0.0" y="17" width="80" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="GFF-Ql-VdX"/>
@@ -816,6 +821,13 @@
                                     <action selector="actionPrintAllergen:" destination="3R5-0V-HwN" eventType="touchUpInside" id="ILZ-Qv-gdT"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cE1-DB-Cyh">
+                                <rect key="frame" x="102.5" y="148" width="257.5" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="QV0-S3-g7R"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -827,13 +839,16 @@
                             <constraint firstAttribute="trailing" secondItem="kzR-av-iPd" secondAttribute="trailing" constant="15" id="5th-Od-V2K"/>
                             <constraint firstItem="xOM-UQ-m8e" firstAttribute="top" secondItem="3Qh-U3-NR2" secondAttribute="top" id="HaZ-ka-ugl"/>
                             <constraint firstItem="xOM-UQ-m8e" firstAttribute="leading" secondItem="3Qh-U3-NR2" secondAttribute="leading" id="KF7-UT-aKw"/>
+                            <constraint firstItem="cE1-DB-Cyh" firstAttribute="top" secondItem="AIq-51-NMu" secondAttribute="bottom" constant="8" id="L9Q-ex-P4Q"/>
                             <constraint firstItem="0IS-ea-aU0" firstAttribute="top" secondItem="H08-QR-pX8" secondAttribute="bottom" id="MLl-AL-WIC"/>
                             <constraint firstItem="0IS-ea-aU0" firstAttribute="leading" secondItem="3Qh-U3-NR2" secondAttribute="leading" constant="15" id="OlD-89-21D"/>
                             <constraint firstItem="QMH-Dd-2jS" firstAttribute="leading" secondItem="3Qh-U3-NR2" secondAttribute="leading" constant="15" id="PzY-qC-wdj"/>
                             <constraint firstAttribute="trailing" secondItem="CMT-mI-2D9" secondAttribute="trailing" constant="15" id="W7o-yA-wYh"/>
                             <constraint firstItem="kzR-av-iPd" firstAttribute="leading" secondItem="3Qh-U3-NR2" secondAttribute="leading" constant="15" id="Y1M-Jy-phG"/>
+                            <constraint firstItem="cE1-DB-Cyh" firstAttribute="trailing" secondItem="AIq-51-NMu" secondAttribute="trailing" id="aJ0-uD-b3x"/>
                             <constraint firstAttribute="trailing" secondItem="H08-QR-pX8" secondAttribute="trailing" constant="15" id="blh-h6-NtU"/>
                             <constraint firstItem="SP2-Zg-YXT" firstAttribute="centerY" secondItem="428-ty-ttT" secondAttribute="centerY" id="chu-B3-Cjj"/>
+                            <constraint firstItem="cE1-DB-Cyh" firstAttribute="leading" secondItem="AIq-51-NMu" secondAttribute="leading" id="gYg-x3-8BD"/>
                             <constraint firstItem="kzR-av-iPd" firstAttribute="top" secondItem="0IS-ea-aU0" secondAttribute="bottom" id="j6F-Fz-NHK"/>
                             <constraint firstItem="428-ty-ttT" firstAttribute="centerX" secondItem="3Qh-U3-NR2" secondAttribute="centerX" constant="-85" id="jEF-EZ-pMc"/>
                             <constraint firstItem="SP2-Zg-YXT" firstAttribute="leading" secondItem="428-ty-ttT" secondAttribute="trailing" constant="20" id="lda-V6-e1c"/>
@@ -846,7 +861,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="1qu-PU-1K8" id="0M5-Dg-oU3"/>
+                        <outlet property="autocompleteTable" destination="cE1-DB-Cyh" id="aMV-fD-VYN"/>
                         <outlet property="btnAllergen" destination="Kik-sf-Nkq" id="J7S-mc-fVU"/>
+                        <outlet property="constraint_Height" destination="QV0-S3-g7R" id="d9R-oQ-WQr"/>
                         <outlet property="tfBatchNumber" destination="jW8-hX-978" id="pRm-fi-1Z6"/>
                         <outlet property="tfExpireDate" destination="u50-ne-A15" id="IHs-vO-37g"/>
                         <outlet property="tfItemName" destination="AIq-51-NMu" id="sNp-ly-bmM"/>
@@ -965,7 +983,7 @@
                                 <rect key="frame" x="15" y="150" width="345" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Number" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltl-6h-D8r">
-                                        <rect key="frame" x="0.0" y="9.5" width="80" height="32"/>
+                                        <rect key="frame" x="0.0" y="9" width="80" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="zrc-X3-eTr"/>
                                         </constraints>
@@ -1227,7 +1245,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtW-cj-Ohh">
-                                                <rect key="frame" x="141.5" y="15" width="92.5" height="21"/>
+                                                <rect key="frame" x="142" y="15" width="92.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>

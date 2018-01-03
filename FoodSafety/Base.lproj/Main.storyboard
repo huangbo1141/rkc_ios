@@ -262,13 +262,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iG2-an-FTo">
-                                <rect key="frame" x="8" y="140" width="398" height="588"/>
+                                <rect key="frame" x="20" y="140" width="374" height="588"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-rV-nV6">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsF-lc-6WD">
-                                                <rect key="frame" x="0.0" y="0.0" width="398" height="1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Glx-Qu-6re"/>
@@ -290,12 +290,12 @@
                         <constraints>
                             <constraint firstItem="DPc-yH-EMi" firstAttribute="top" secondItem="Z5H-0t-ucU" secondAttribute="top" id="1a6-PP-ZxP"/>
                             <constraint firstItem="SFC-hG-kdN" firstAttribute="leading" secondItem="Z5H-0t-ucU" secondAttribute="leading" constant="20" id="38U-d9-Bmy"/>
-                            <constraint firstItem="iG2-an-FTo" firstAttribute="leading" secondItem="Z5H-0t-ucU" secondAttribute="leading" constant="8" id="BD9-5J-gSb"/>
+                            <constraint firstItem="iG2-an-FTo" firstAttribute="leading" secondItem="Z5H-0t-ucU" secondAttribute="leading" constant="20" id="BD9-5J-gSb"/>
                             <constraint firstItem="DPc-yH-EMi" firstAttribute="centerX" secondItem="Z5H-0t-ucU" secondAttribute="centerX" id="BZo-q6-aB4"/>
                             <constraint firstItem="b5L-ms-nYS" firstAttribute="top" secondItem="iG2-an-FTo" secondAttribute="bottom" constant="8" id="KAk-zc-TMY"/>
                             <constraint firstItem="SFC-hG-kdN" firstAttribute="top" secondItem="DPc-yH-EMi" secondAttribute="bottom" constant="20" id="Pl7-0a-GO8"/>
                             <constraint firstItem="iG2-an-FTo" firstAttribute="top" secondItem="SFC-hG-kdN" secondAttribute="bottom" constant="10" id="UtS-fW-7dS"/>
-                            <constraint firstAttribute="trailing" secondItem="iG2-an-FTo" secondAttribute="trailing" constant="8" id="Vh2-aR-Ww5"/>
+                            <constraint firstAttribute="trailing" secondItem="iG2-an-FTo" secondAttribute="trailing" constant="20" id="Vh2-aR-Ww5"/>
                             <constraint firstItem="DPc-yH-EMi" firstAttribute="width" secondItem="Z5H-0t-ucU" secondAttribute="width" id="lB5-1U-HB5"/>
                             <constraint firstAttribute="trailing" secondItem="SFC-hG-kdN" secondAttribute="trailing" constant="20" id="w4u-Ws-rha"/>
                         </constraints>
@@ -457,17 +457,17 @@
                                                 <rect key="frame" x="0.0" y="89.666666666666686" width="375" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="input_back" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-6U-MIX">
-                                                        <rect key="frame" x="50" y="0.33333333333337123" width="275" height="40"/>
+                                                        <rect key="frame" x="50" y="0.33333333333331439" width="275" height="40"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="rbQ-xo-aIR">
-                                                        <rect key="frame" x="69" y="16.333333333333371" width="12" height="9"/>
+                                                        <rect key="frame" x="69" y="16.333333333333314" width="12" height="9"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="12" id="ZaN-cu-HZM"/>
                                                             <constraint firstAttribute="width" secondItem="rbQ-xo-aIR" secondAttribute="height" multiplier="4:3" id="ya6-aM-BNi"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vqq-Fu-qd9">
-                                                        <rect key="frame" x="89" y="12.333333333333371" width="197" height="15"/>
+                                                        <rect key="frame" x="89" y="12.333333333333314" width="197" height="15"/>
                                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -491,17 +491,17 @@
                                                 <rect key="frame" x="0.0" y="137.66666666666669" width="375" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="input_back" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-ln-14R">
-                                                        <rect key="frame" x="50" y="0.33333333333337123" width="275" height="40"/>
+                                                        <rect key="frame" x="50" y="0.33333333333331439" width="275" height="40"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Qv4-mC-ajZ">
-                                                        <rect key="frame" x="69" y="13.333333333333371" width="14" height="14"/>
+                                                        <rect key="frame" x="69" y="13.333333333333314" width="14" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="14" id="87h-Il-9xG"/>
                                                             <constraint firstAttribute="height" constant="14" id="F2Q-d1-sfN"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Qd-q1a">
-                                                        <rect key="frame" x="88" y="12.333333333333371" width="198" height="15"/>
+                                                        <rect key="frame" x="88" y="12.333333333333314" width="198" height="15"/>
                                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -525,17 +525,17 @@
                                                 <rect key="frame" x="0.0" y="185.66666666666669" width="375" height="40"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="input_back" translatesAutoresizingMaskIntoConstraints="NO" id="kmy-FT-85f">
-                                                        <rect key="frame" x="50" y="0.33333333333337123" width="275" height="40"/>
+                                                        <rect key="frame" x="50" y="0.33333333333331439" width="275" height="40"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-Hw-eUh">
-                                                        <rect key="frame" x="70" y="12.333333333333371" width="12" height="16"/>
+                                                        <rect key="frame" x="70" y="12.333333333333314" width="12" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="UhB-0W-Htd"/>
                                                             <constraint firstAttribute="width" constant="12" id="ZqT-F0-8ZU"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wu-nk-I6t">
-                                                        <rect key="frame" x="89" y="13.333333333333371" width="199" height="15"/>
+                                                        <rect key="frame" x="89" y="13.333333333333314" width="199" height="15"/>
                                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -569,7 +569,7 @@
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDE-LL-woE">
-                                                        <rect key="frame" x="5" y="5.3333333333332575" width="285" height="164"/>
+                                                        <rect key="frame" x="5" y="5.3333333333333712" width="285" height="164"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </imageView>
                                                 </subviews>

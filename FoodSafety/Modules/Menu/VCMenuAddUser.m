@@ -81,7 +81,7 @@
     [self setSwitchViews];
 }
 - (IBAction)actionLogin:(UIView*)sender {
-    [Global showIndicator:self];
+    
     
     NSString* username = @"";
     NSString* password = @"";
@@ -122,7 +122,7 @@
     }
     
     NSMutableDictionary *params= [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
-    
+    [Global showIndicator:self];
     [[HttpUtils shared] makePurePostRequest:url withParams:params withCompletionBlock:^(id responseObject, NSString *error) {
         if(error == nil) {
             NSDictionary* response = (NSDictionary*) responseObject;
@@ -130,6 +130,7 @@
                 // error
                 return;
             }
+            [Global stopIndicator:self];
             if( [[response objectForKey:@"login"] intValue] == 0 ) {
                 
             }else if([[response objectForKey:@"login"] intValue] == 1 ) {
@@ -165,7 +166,10 @@
                 
                 
                 [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:key_domain];
-                [self.navigationController popViewControllerAnimated:true];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.navigationController popViewControllerAnimated:true];
+                });
+                
                 return;
             }
             if([response objectForKey:@"token"]) {

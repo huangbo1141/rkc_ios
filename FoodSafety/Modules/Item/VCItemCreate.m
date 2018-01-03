@@ -15,10 +15,13 @@
 #import "NetworkParser.h"
 #import "Global.h"
 #import "VCPrint.h"
-
+#import "HttpUtils.h"
+#import "AutocompleteCell.h"
 
 @interface VCItemCreate ()
 @property (strong, nonatomic) NSDate *expireDate;
+@property (nonatomic,strong) NSMutableArray *items;
+@property (nonatomic,strong) NSMutableArray *items_predction;
 @end
 
 @implementation VCItemCreate
@@ -119,11 +122,23 @@
     uDPExpireDate.datePickerMode = UIDatePickerModeDate;
     [uDPExpireDate setDate:[NSDate date]];
     [uDPExpireDate addTarget:self action:@selector(updateExpireDate:) forControlEvents:UIControlEventValueChanged];
-    [self.tfExpireDate setInputView:uDPExpireDate];
-    self.tfExpireDate.delegate = self;
+//    [self.tfExpireDate setInputView:uDPExpireDate];
+//    self.tfExpireDate.delegate = self;
     [self loadData];
     
+    [_autocompleteTable registerNib:[UINib nibWithNibName:@"AutocompleteCell" bundle:nil] forCellReuseIdentifier:@"CellGeneral"];
+    _autocompleteTable.hidden = true;
     
+    [_autocompleteTable setDelegate:self];
+    [_autocompleteTable setDataSource:self];
+    
+    [self.tfItemName addTarget:self
+                      action:@selector(textFieldDidChange:)
+            forControlEvents:UIControlEventEditingChanged];
+    
+    self.activityIndicator.hidden = true;
+    
+    _autocompleteTable.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void) loadData {
@@ -245,4 +260,180 @@
     self.tvAllergens.text = allergenStr;
     self.itemModel.mAlergenString = allergenStr;
 }
+#pragma -mark textFields
+-(void)textFieldDidChange:(UITextField*)textField{
+    if (textField == self.tfItemName) {
+        NSString *str = textField.text;
+        if (![str isEqualToString:@""]&& [str length]>=2) {
+            [self getAutoCompletePlaces:str];
+            
+        }else{
+            _autocompleteTable.hidden = true;
+            [_autocompleteTable setScrollEnabled:false];
+        }
+    }
+}
+-(void)showAutoComplete:(NSMutableArray*)items{
+    self.items = items;
+    if (self.items.count>0) {
+        _autocompleteTable.hidden = false;
+        [self.autocompleteTable reloadData];
+    }else{
+        _autocompleteTable.hidden = true;
+        [self.autocompleteTable reloadData];
+    }
+    
+}
+-(void)getAutoCompletePlaces:(NSString *)searchKey{
+    NSMutableDictionary *params= [[NSMutableDictionary alloc] init];
+    
+    NSString *url = sAppDomain;
+    url = [url stringByAppendingString:GET_ITEMS];
+    url = [url stringByAppendingString:@"/"];
+    url = [url stringByAppendingString:searchKey];
+    
+    self.activityIndicator.hidden = false;
+    [self.activityIndicator startAnimating];
+    [[HttpUtils shared] makePurePostRequest:url withParams:params withCompletionBlock:^(id responseObject, NSString *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+            
+        } else {
+            NSDictionary* dict = (NSDictionary*) responseObject;
+            NSMutableArray* tempItems = [[NSMutableArray alloc] init];
+            ItemModel* imodel = [[ItemModel alloc] init];
+            imodel.mName = searchKey;
+            [tempItems addObject:imodel];
+            BOOL duplicate = false;
+            if([dict objectForKey:@"items"] != nil) {
+                NSArray* items =  dict[@"items"];
+                
+                if ([items isKindOfClass:[NSArray class]]) {
+                    for (id obj in items) {
+                        ItemModel* imodel = [[ItemModel alloc] init];
+                        if ([obj isKindOfClass:[NSDictionary class]]) {
+                            [imodel parse:obj];
+                        }
+                        if ([[imodel.mName lowercaseString] isEqualToString:[searchKey lowercaseString]]) {
+                            duplicate = true;
+                        }
+                        [tempItems addObject:imodel];
+                    }
+                }
+                
+                
+            }else {
+                
+            }
+            if (duplicate) {
+                [tempItems removeObjectAtIndex:0];
+            }
+            [self showAutoComplete:tempItems];
+        }
+        self.activityIndicator.hidden = true;
+        [self.activityIndicator stopAnimating];
+        
+    }];
+    
+}
+#pragma mark - tableview
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    AutocompleteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellGeneral" forIndexPath:indexPath];
+    ItemModel* imodel = self.items[indexPath.row];
+    cell.lblContent.text = imodel.mName;
+    if (imodel.mExpireDate == nil || [imodel.mExpireDate length]==0) {
+        cell.view1.hidden = true;
+        cell.view2.hidden = true;
+    }else{
+        cell.view1.hidden = false;
+        cell.view2.hidden = false;
+        cell.lbl1_2.text = [imodel getCreateDate];
+        cell.lbl2_2.text = [imodel getExpireDate];
+    }
+    
+    return cell;
+    
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (tableView == _autocompleteTable) {
+        
+        return _items.count;
+    }
+    return 0;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ItemModel* imodel = self.items[indexPath.row];
+    if (imodel.mId == nil || [imodel.mId length] == 0) {
+        return 40;
+    }else{
+        return 80;
+    }
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    long row = indexPath.row;
+    
+    ItemModel* imodel = self.items[indexPath.row];
+    self.autocompleteTable.hidden = true;
+    
+    if (imodel.mId==nil || [imodel.mId length] == 0) {
+        self.tfItemName.text = imodel.mName;
+    }
+    else{
+        // http request
+        self.tfItemName.text = imodel.mName;
+        
+        NSMutableDictionary *params= [[NSMutableDictionary alloc] init];
+        
+        NSString *url = sAppDomain;
+        url = [url stringByAppendingString:PREVIEW_ITEM];
+        
+        params[@"token"] = [UserInfo shared].mAccount.mToken;
+        params[@"id"] = imodel.mId;
+        
+        
+        self.activityIndicator.hidden = false;
+        [self.activityIndicator startAnimating];
+        [[HttpUtils shared] makePurePostRequest:url withParams:params withCompletionBlock:^(id responseObject, NSString *error) {
+            if (error) {
+                NSLog(@"Error: %@", error);
+                
+            } else {
+                NSDictionary* dict = (NSDictionary*) responseObject;
+                NSDictionary* data = dict[@"item"];
+                ItemModel* imodel = [[ItemModel alloc] init];
+                [imodel parse:data];
+                
+                for (MultiSelectCellModel* cell in self.allergenModels) {
+                    cell.isSelected = false;
+                }
+                for (NSString* string in imodel.mAllergens) {
+                    for (MultiSelectCellModel* cell in self.allergenModels) {
+                        if ([[cell.mValue lowercaseString] isEqualToString:[string lowercaseString]]) {
+                            cell.isSelected = true;
+                        }
+                    }
+                }
+                
+                self.tvDescription.text = imodel.mDescription;
+                self.tfExpireDate.text = imodel.mDiff;
+                NSLog(imodel.mDiff);
+                
+                [self setAllergensMSTV];
+            }
+            self.activityIndicator.hidden = true;
+            [self.activityIndicator stopAnimating];
+            
+        }];
+    }
+    
+    return;
+    
+}
+
+
 @end

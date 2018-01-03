@@ -11,7 +11,7 @@
 #import "ItemInfoModel.h"
 #import "ItemModel.h"
 
-@interface VCItemCreate : UIViewController<UITextFieldDelegate>
+@interface VCItemCreate : UIViewController<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITextField *tfItemName;
 @property (weak, nonatomic) IBOutlet UITextField *tfBatchNumber;
 @property (weak, nonatomic) IBOutlet BorderTextView *tvDescription;
@@ -22,5 +22,10 @@
 @property (strong, nonatomic) ItemInfoModel* infoModel;
 @property (strong, nonatomic) ItemModel* itemModel;
 @property (strong, nonatomic) NSMutableArray* allergenModels;
+
+@property (weak, nonatomic) IBOutlet UITableView *autocompleteTable;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraint_Height;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 
 @end

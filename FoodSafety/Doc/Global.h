@@ -79,6 +79,7 @@ extern  NSString * DELETE_OIL;
 
 extern  NSString * GET_ITEM_INFO;
 extern  NSString * GET_ITEMS;
+extern  NSString * PREVIEW_ITEM;
 extern  NSString * GET_ITEM;
 extern  NSString * UPDATE_ITEM;
 extern  NSString * CREATE_ITEM;

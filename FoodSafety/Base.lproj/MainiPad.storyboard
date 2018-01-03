@@ -262,13 +262,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-jj-LQI">
-                                <rect key="frame" x="20" y="200" width="728" height="804"/>
+                                <rect key="frame" x="40" y="200" width="688" height="804"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-an-I2b">
-                                        <rect key="frame" x="0.0" y="0.0" width="728" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="688" height="1"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQp-h0-jHD">
-                                                <rect key="frame" x="0.0" y="0.0" width="728" height="1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="688" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Ve6-gO-dmJ"/>
@@ -291,9 +291,9 @@
                             <constraint firstItem="2nw-jj-LQI" firstAttribute="top" secondItem="abG-Lx-upS" secondAttribute="bottom" constant="20" id="0x0-I5-gvf"/>
                             <constraint firstAttribute="trailing" secondItem="abG-Lx-upS" secondAttribute="trailing" constant="40" id="B9P-TB-PwX"/>
                             <constraint firstItem="abG-Lx-upS" firstAttribute="top" secondItem="zHy-GU-cgd" secondAttribute="bottom" constant="20" id="Boa-5G-yA5"/>
-                            <constraint firstAttribute="trailing" secondItem="2nw-jj-LQI" secondAttribute="trailing" constant="20" id="WVa-Q4-1aZ"/>
+                            <constraint firstAttribute="trailing" secondItem="2nw-jj-LQI" secondAttribute="trailing" constant="40" id="WVa-Q4-1aZ"/>
                             <constraint firstItem="zHy-GU-cgd" firstAttribute="top" secondItem="p1S-pS-pga" secondAttribute="top" id="WYN-CZ-inp"/>
-                            <constraint firstItem="2nw-jj-LQI" firstAttribute="leading" secondItem="p1S-pS-pga" secondAttribute="leading" constant="20" id="r18-i6-H4L"/>
+                            <constraint firstItem="2nw-jj-LQI" firstAttribute="leading" secondItem="p1S-pS-pga" secondAttribute="leading" constant="40" id="r18-i6-H4L"/>
                             <constraint firstItem="abG-Lx-upS" firstAttribute="leading" secondItem="p1S-pS-pga" secondAttribute="leading" constant="40" id="rpq-JI-Nkq"/>
                             <constraint firstItem="zHy-GU-cgd" firstAttribute="centerX" secondItem="p1S-pS-pga" secondAttribute="centerX" id="xBJ-N3-eCs"/>
                             <constraint firstItem="shA-kx-SZD" firstAttribute="top" secondItem="2nw-jj-LQI" secondAttribute="bottom" constant="20" id="zC3-eD-vdl"/>
@@ -714,7 +714,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-zO-gzw" customClass="BorderButton">
-                                <rect key="frame" x="259" y="633" width="250" height="70"/>
+                                <rect key="frame" x="259" y="635" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.70196078429999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Ged-6k-E65"/>
@@ -740,7 +740,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j46-Ly-Mf6">
-                                        <rect key="frame" x="165" y="28" width="483" height="24"/>
+                                        <rect key="frame" x="165" y="27.5" width="483" height="25"/>
                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
@@ -774,7 +774,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-Hn-qze">
-                                        <rect key="frame" x="165" y="28" width="483" height="24"/>
+                                        <rect key="frame" x="165" y="27.5" width="483" height="25"/>
                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
@@ -795,7 +795,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkQ-C8-shz">
-                                <rect key="frame" x="301.5" y="505" width="164" height="36"/>
+                                <rect key="frame" x="298.5" y="505" width="170" height="37"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
@@ -803,7 +803,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxT-dC-rr3">
-                                <rect key="frame" x="302" y="549" width="164" height="36"/>
+                                <rect key="frame" x="299" y="550" width="170" height="37"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
@@ -824,7 +824,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYB-sb-FfW">
-                                        <rect key="frame" x="165" y="28" width="483" height="24"/>
+                                        <rect key="frame" x="165" y="27.5" width="483" height="25"/>
                                         <color key="textColor" red="0.1019607843" green="0.34509803919999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
@@ -851,7 +851,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-zf-bBl" customClass="BorderButton">
-                                <rect key="frame" x="259" y="733" width="250" height="70"/>
+                                <rect key="frame" x="259" y="735" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.70196078429999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="7cL-Pe-R7P"/>
